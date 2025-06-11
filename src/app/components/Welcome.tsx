@@ -18,8 +18,8 @@ export default function Welcome() {
           <DownArrow />
         </div>
         <div className="p-5 pb-0  border-l grid gap-5">
-          <p>begleiten wir Menschen auf ihrem Weg in den deutschen Arbeitsmarkt — persönlich, engagiert und mit viel Erfahrung.
-            Ob Neustart oder nächster Karriereschritt — wir gehen ihn gemeinsam mit Ihnen!</p>
+          <p>begleiten wir Menschen auf ihrem Weg in den deutschen Arbeitsmarkt — <span className="important-word">persönlich</span>, <span className="important-word">engagiert</span> und <span className="important-word">mit viel Erfahrung</span>.
+            Ob Neustart oder nächster Karriereschritt — <span className="important-word">wir gehen ihn gemeinsam mit Ihnen!</span></p>
           <ButtonSecond btnText="Kostenlose Erstberatung" />
         </div>
       </div>
