@@ -1,6 +1,6 @@
 import Header from "./components/Header"
 import Welcome from "./components/Welcome"
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 import Coaching from "./components/Coaching"
 
 export default function Home() {
@@ -10,6 +10,6 @@ export default function Home() {
       <Welcome />
       <Coaching />
     </section>
-    {/* <Footer /> */}
+    <Footer />
   </>
 }
