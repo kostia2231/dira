@@ -1,22 +1,33 @@
 @import "tailwindcss";
 
+/* #calendly-overlay * {
+  overflow-y: hidden;
+} */
+
+html,
+body,
+#__next {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-manrope-sans);
   font-weight: 500;
   background-color: rgba(255, 250, 240, 1);
 }
 .important-word {
-  font-weight: 700;
-  color: rgba(45, 87, 181, 1);
+  font-weight: 500;
+  color: rgba(10, 33, 61, 1);
 }
 
 * {
   box-sizing: border-box;
-  border-color: rgba(121, 155, 212, 1);
+  border-color: rgba(205, 211, 220, 1);
 }
 
 .bg-dira-blue {
-  background-color: rgba(45, 87, 181, 1);
+  background-color: rgba(10, 33, 61, 1);
 }
 
 .bg-dira-black {
@@ -32,7 +43,7 @@ body {
 }
 
 .text-color-dira-blue {
-  color: rgba(45, 87, 181, 1);
+  color: rgba(10, 33, 61, 1);
 }
 
 /* :root {

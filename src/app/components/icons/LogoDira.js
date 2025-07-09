@@ -1,8 +1,7 @@
 const SvgLogoDira = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={217}
-    height={42}
+    viewBox="0 0 217 42"
     fill="none"
     {...props}
   >

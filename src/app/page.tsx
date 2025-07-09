@@ -1,15 +1,15 @@
-import Header from "./components/Header"
 import Welcome from "./components/Welcome"
-import Footer from "./components/Footer"
 import Coaching from "./components/Coaching"
+import Unternehmer from "./components/Unternehmer"
+import Address from "./components/Address"
 
 export default function Home() {
   return <>
-    <Header />
     <section className="mx-[20px] border-l">
       <Welcome />
       <Coaching />
+      <Unternehmer />
+      <Address />
     </section>
-    <Footer />
   </>
 }
