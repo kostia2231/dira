@@ -12,7 +12,7 @@ export default function Welcome() {
       <div className="grid grid-cols-2 text-2xl">
         <div className="p-5 pb-0 flex justify-between flex-col h-full">
           <div className="flex justify-between text-[rgba(110,110,115,1)]">
-            <p>Seit über <span>20</span> Jahren</p>
+            <p className="important-word">Seit über <span>20</span> Jahren</p>
             {/* <div className="h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
           </div>
           <DownArrow />

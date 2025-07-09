@@ -20,7 +20,7 @@ export default function Header() {
 
       <div className="flex gap-5 justify-center items-center text-color-light">
         <Link href="/uber-uns">Über Uns</Link>
-        <a href="">Coaching</a>
+        <Link href="/coaching">Coaching</Link>
         <a href="">Für Unternehmer</a>
         <a href="">Jobangebote</a>
         <a href="">Kontakt</a>
