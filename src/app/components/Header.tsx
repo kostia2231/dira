@@ -19,11 +19,11 @@ export default function Header() {
       </Link>
 
       <div className="flex gap-5 justify-center items-center text-color-light">
-        <Link href="/uber-uns">Über Uns</Link>
-        <Link href="/coaching">Coaching</Link>
-        <a onClick={onClick} className="cursor-pointer">Für Unternehmer</a>
-        <Link href="/jobangebote">Jobangebote</Link>
-        <a>Kontakte</a>
+        <Link href="/uber-uns" className="underline-animation-light">Über Uns</Link>
+        <Link href="/coaching" className="underline-animation-light">Coaching</Link>
+        <a onClick={onClick} className="cursor-pointer underline-animation-light">Für Unternehmer</a>
+        <Link href="/jobangebote" className="underline-animation-light">Jobangebote</Link>
+        <a className="underline-animation-light cursor-pointer">Kontakte</a>
         <div className="flex gap-2 items-center">
           <p>DE</p>
           {/* <div className="h-2 w-2 border-l-2 border-b-2 rotate-315 mb-1"></div> */}

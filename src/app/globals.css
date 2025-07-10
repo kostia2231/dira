@@ -17,7 +17,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  /* min-height: 100%; */
+  min-height: 100%;
   /* overflow: auto; */
   scroll-behavior: auto;
 }
@@ -83,3 +83,47 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+}
+.underline-animation::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: rgba(10, 33, 61, 1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.underline-animation-light {
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+}
+.underline-animation-light::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: rgba(255, 250, 240, 1);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s ease;
+}
+.underline-animation-light:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

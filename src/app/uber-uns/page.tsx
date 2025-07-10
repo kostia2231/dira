@@ -7,7 +7,7 @@ export default function UberUns() {
         <div className="grid">
           <p className="text-[80px] leading-[80px] border-b p-5">Weil Arbeit mehr ist als nur ein Job.</p>
           <div className="grid grid-cols-2 text-2xl">
-            <p className="p-5 underline underline-offset-10 decoration-1">Über Uns</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Über Uns</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">Stell dir vor, du stehst an einem Bahnsteig. In der Hand: dein Koffer voller Erfahrungen, Fähigkeiten und Hoffnungen. Du wartest auf den Zug in Richtung Zukunft – aber welcher ist der richtige? Und wo fährt er überhaupt hin?
               <br />
               <br />
@@ -20,7 +20,7 @@ export default function UberUns() {
 
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Was wir für Arbeitssuchende tun</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Was wir für Arbeitssuchende tun</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">
               Ganz einfach: <span className="important-word">Wir machen Chancen sichtbar.</span> <br />
               Ob du gerade erst in Deutschland angekommen bist oder schon länger suchst – wir holen dich genau dort ab, wo du stehst.
@@ -31,7 +31,7 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Was wir für Unternehmen tun</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Was wir für Unternehmen tun</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">
               Sie suchen Mitarbeiter:innen, die wirklich passen? Die nicht nur den Lebenslauf erfüllen, sondern auch ins Team und zur Unternehmenskultur?
               Dann sind Sie bei uns genau richtig.
@@ -43,7 +43,7 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Und was ist mit Coaching</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Und was ist mit Coaching</p>
             <div className="border-l text-[rgba(110,110,115,1)]">
               <p className="p-5">
                 Manchmal braucht es nicht den nächsten Job – sondern den nächsten Schritt im Kopf.
@@ -57,7 +57,7 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Wem wir helfen</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Wem wir helfen</p>
             <div className="border-l text-[rgba(110,110,115,1)]">
               <p className="p-5">
                 Unser Herz schlägt besonders für Menschen aus dem osteuropäischen Raum – aber bei uns sind <span className="important-word">alle Nationen</span>, <span className="important-word">alle Altersgruppen</span>, <span className="important-word">alle Lebensgeschichten</span> willkommen. Vielfalt ist kein Schlagwort für uns, sondern gelebte Realität.
@@ -68,7 +68,7 @@ export default function UberUns() {
           <p className="text-[80px] leading-[80px] p-5 border-t">Wir glauben an Potenzial. Auch dort, wo andere es übersehen.</p>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Was uns ausmacht</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Was uns ausmacht</p>
             <div className="border-l text-[rgba(110,110,115,1)]">
               <p className="p-5"><span className="important-word">• Echte Menschen statt automatisierter Abläufe.</span></p>
               <p className="p-5 border-t"><span className="important-word">• Tiefe Gespräche statt oberflächlicher Beratung.</span></p>

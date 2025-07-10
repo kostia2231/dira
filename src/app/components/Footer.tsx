@@ -35,35 +35,37 @@ export default function Footer() {
 
           <div className="p-5 pb-0 border-t">
             <p className="important-word">Telefon</p>
-            <a href="tel:+4917621146010">+49 ( 176 ) 21 14 6010</a>
+            <div className="underline-animation">
+              <a href="tel:+4917621146010">+49 ( 176 ) 21 14 6010</a>
+            </div>
           </div>
 
           <div className="p-5 pb-0 border-t">
             <p className="important-word">Coaching</p>
-            <a href="mailto:team.coaching@avbr.de">team.coaching@avbr.de</a>
+            <a href="mailto:team.coaching@avbr.de" className="underline-animation">team.coaching@avbr.de</a>
           </div>
 
           <div className="p-5 pb-5 border-t">
             <p className="important-word">Arbeitsvermittlung</p>
-            <a href="mailto:job.vermittlung@avbr.de">job.vermittlung@avbr.de</a>
+            <a href="mailto:job.vermittlung@avbr.de" className="underline-animation">job.vermittlung@avbr.de</a>
           </div>
         </div>
 
       </div>
-      <div className="grid grid-cols-2 text-[12px]">
+      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)]">
         <div className="p-5 flex gap-5">
-          <p>Über Uns</p>
-          <p>Coaching</p>
-          <p>Für Unternehmer</p>
-          <p>Jobangebote</p>
-          <p>Kontakte</p>
+          <p className="underline-animation cursor-pointer">Über Uns</p>
+          <p className="underline-animation cursor-pointer">Coaching</p>
+          <p className="underline-animation cursor-pointer">Für Unternehmer</p>
+          <p className="underline-animation cursor-pointer">Jobangebote</p>
+          <p className="underline-animation cursor-pointer">Kontakte</p>
         </div>
         <div className="border-l p-5  flex justify-between">
           <div className="flex gap-5">
-            <p>Leitbild</p>
-            <p>Impressum & Datenschutz</p>
+            <p className="underline-animation cursor-pointer">Leitbild</p>
+            <p className="underline-animation cursor-pointer">Impressum & Datenschutz</p>
           </div>
-          <div>
+          <div className="flex justify-center items-center">
             <p className="ml-auto">© 2025</p>
           </div>
         </div>

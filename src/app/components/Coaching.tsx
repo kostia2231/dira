@@ -1,11 +1,11 @@
 "use client";
 import ButtonSecond from "./ButtonSecond"
-import ParallaxImageOne from "../components/ParallaxImageOne"
+import ParallaxImageOne from "./ParallaxImageOne"
 
 export default function Coaching() {
   return <>
     <div className="border-t">
-      <ParallaxImageOne imageUrl="/images/12.png" speed={-15} />
+      <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={-10} />
     </div>
     <div className="border-t grid grid-cols-2">
       <div className="p-5 pb-0 flex flex-col justify-between h-full">

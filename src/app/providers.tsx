@@ -4,8 +4,15 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { ReactLenis, useLenis } from 'lenis/react'
 
 export function Providers({ children }: { children: React.ReactNode }) {
-  console.log(ReactLenis, useLenis)
-  return <ParallaxProvider scrollAxis="vertical">
-    {children}
-  </ParallaxProvider>;
+  const lenis = useLenis((lenis) => {
+    console.log(lenis)
+  })
+  console.log(lenis)
+
+  return <>
+    <ReactLenis root />
+    <ParallaxProvider scrollAxis="vertical">
+      {children}
+    </ParallaxProvider>
+  </>
 }

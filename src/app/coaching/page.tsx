@@ -8,7 +8,7 @@ export default function CoachingPage() {
           <p className="text-[80px] leading-[80px] border-b p-5">Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.</p>
 
           <div className="grid grid-cols-2 text-2xl">
-            <p className="p-5 underline underline-offset-10 decoration-1">Coaching</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Coaching</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">
               <span className="important-word">Du suchst Arbeit – aber nicht irgendeinen Job.</span> Du suchst eine Aufgabe, die zu dir passt. Einen Platz, an dem du ankommen kannst. <span className="important-word">Wir helfen dir, diesen Platz zu finden.</span>
               <br /> <br />
@@ -17,14 +17,14 @@ export default function CoachingPage() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Was uns ausmacht</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Was uns ausmacht</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">
               <span className="important-word">Wir hören zu. Wir stellen Fragen.</span> Und wir sehen mehr in dir als nur deinen Lebenslauf. Gemeinsam mit dir erstellen wir ein klares Profil, das zeigt, was du kannst – und wohin du willst.
             </p>
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
-            <p className="p-5 underline underline-offset-10 decoration-1">Unsere Leistungen</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Unsere Leistungen</p>
             <div className="border-l  text-[rgba(110,110,115,1)]">
               <p className="p-5">
                 Maßgeschneidert statt von der Stange:
@@ -55,7 +55,7 @@ export default function CoachingPage() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t border-b">
-            <p className="p-5 underline underline-offset-10 decoration-1">Unser Ziel</p>
+            <p className="p-5 underline underline-offset-10 decoration-2">Unser Ziel</p>
             <p className="border-l p-5 text-[rgba(110,110,115,1)]">
               <span className="important-word">Nicht irgendein Job.</span> Sondern einer, der dich erfüllt. Einer, der zu dir passt wie ein Schlüssel ins Schloss.            </p>
           </div>

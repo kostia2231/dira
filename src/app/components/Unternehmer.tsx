@@ -1,12 +1,11 @@
 import ButtonSecond from "./ButtonSecond"
 import ParallaxImageOne from "../components/ParallaxImageOne"
 
-
 export default function Unternehmer() {
   return (
     <>
       <div className="border-t">
-        <ParallaxImageOne imageUrl="/images/22.png" speed={-15} />
+        <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
       <div className="border-t grid grid-cols-2">
         <div className="p-5 flex justify-between text-[rgba(10,33,61,1)]">
