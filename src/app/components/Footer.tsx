@@ -1,57 +1,73 @@
-// import DownArrow from "./icons/DownArrow"
+"use client"
 
+import ButtonSecond from "./ButtonSecond"
+// import Image from "next/image"
 
 export default function Footer() {
-  return <>
-    <footer className="pb-0 pr-0 min-h-screen grid grid-rows-2 text-color-light">
-      <div className="border-black ml-5 border-l flex">
-        <div className="mt-auto -scale-y-100 -scale-x-100 mb-5 mr-5  ml-auto">
-          {/* <DownArrow /> */}
+  const onClick = () => {
+    window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7")
+  }
+  return (
+    <>
+      <div className="border-t grid grid-cols-2 border-b">
+        <div className="">
+          <div className="flex justify-between text-[rgba(10,33,61,1)]">
+            <p className="p-5 text-[80px] leading-[80px]">Kontakte</p>
+            {/* <div className="m-5 h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
+          </div>
+
         </div>
-      </div>
-      <div className="bg-dira-blue p-5 flex flex-col justify-between">
-        <div className="grid grid-cols-3 gap-10">
-          <div>
-            <p>D.I.R.A. — Arbeitsvermittlung</p>
-            <p>Inh. Dipl.-Ing. Gennadi Rouditser</p>
-          </div>
-          <div>
-            <p className="font-bold">
-              Adresse
+        <div className="text-2xl  flex flex-col gap-5  text-[rgba(110,110,115,1)]  border-l">
+          <div className="">
+            <p className="p-5 border-b"><span className="important-word">Adresse</span> <br /><span className="">Schöneberger Str. 6, 12103 Berlin-Tempelhof</span></p>
+            <p className="my-5 text-[16px] leading-[24px] pl-5">
+              Anfahrt mit den öffentlichen Verkehrsmitteln
+              Sie erreichen und mit folgenden öffentlichen Verkehrsmitteln:
+              <br />
+              • U-Bahn: U6 (U-Bahnhof Alt-Tempelhof)
+              <br />
+              • Bus: M46, 140, 246 (Berlinickeplatz)
             </p>
-            Schöneberger Str. 6, <br />
-            12103 Berlin-Tempelhof NL
           </div>
-          <div>
-            <p className="font-bold">Telefon</p>
+          <div className="px-5">
+            <ButtonSecond onClick={onClick} btnText="auf der Karte" />
+          </div>
+
+          <div className="p-5 pb-0 border-t">
+            <p className="important-word">Telefon</p>
             <a href="tel:+4917621146010">+49 ( 176 ) 21 14 6010</a>
           </div>
-          <div></div>
-          <div>
-            <p className="font-bold">Arbeitsvermittlung</p>
-            <a href="mailto:job.vermittlung@avbr.de">job.vermittlung@avbr.de</a>
-          </div>
-          <div>
-            <p className="font-bold">Coaching</p>
+
+          <div className="p-5 pb-0 border-t">
+            <p className="important-word">Coaching</p>
             <a href="mailto:team.coaching@avbr.de">team.coaching@avbr.de</a>
           </div>
+
+          <div className="p-5 pb-5 border-t">
+            <p className="important-word">Arbeitsvermittlung</p>
+            <a href="mailto:job.vermittlung@avbr.de">job.vermittlung@avbr.de</a>
+          </div>
         </div>
-        <div>
-          <div className="text-[12px] grid gap-2.5">
-            <p className="opacity-50">© 2025
-              <br />
-              All rights reserved
-            </p>
-            <div className="">
-              <p className="font-bold">Sitemap</p>
-              <div className="flex justify-between">
-                <p >Über Uns | Coaching | Für Unternehmer | Jobangebote  | Partner | Kontakt</p>
-                <p>Impressum & Datenschutz</p>
-              </div>
-            </div>
+
+      </div>
+      <div className="grid grid-cols-2 text-[12px]">
+        <div className="p-5 flex gap-5">
+          <p>Über Uns</p>
+          <p>Coaching</p>
+          <p>Für Unternehmer</p>
+          <p>Jobangebote</p>
+          <p>Kontakte</p>
+        </div>
+        <div className="border-l p-5  flex justify-between">
+          <div className="flex gap-5">
+            <p>Leitbild</p>
+            <p>Impressum & Datenschutz</p>
+          </div>
+          <div>
+            <p className="ml-auto">© 2025</p>
           </div>
         </div>
       </div>
-    </footer >
-  </>
+    </>
+  )
 }

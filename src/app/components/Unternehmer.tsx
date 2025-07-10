@@ -1,9 +1,14 @@
 import ButtonSecond from "./ButtonSecond"
+import ParallaxImageOne from "../components/ParallaxImageOne"
+
 
 export default function Unternehmer() {
   return (
     <>
-      <div className="border-t min-h-screen grid grid-cols-2">
+      <div className="border-t">
+        <ParallaxImageOne imageUrl="/images/22.png" speed={-15} />
+      </div>
+      <div className="border-t grid grid-cols-2">
         <div className="p-5 flex justify-between text-[rgba(10,33,61,1)]">
           <p className="text-[80px] leading-[80px]">Für
             <br />
@@ -12,12 +17,18 @@ export default function Unternehmer() {
 
         </div>
 
-        <div className="border-l p-5 text-2xl grid gap-10 h-fit pb-0 text-[rgba(110,110,115,1)]">
-          <p>Für Unternehmen bieten wir passgenaue Bewerbervorschläge,
-            professionelle Vorauswahl und Beratung bei Personalfragen — <span className="important-word">schnell</span>,
-            <span className="important-word"> effizient</span> und <span className="important-word">menschlich</span>.</p>
-          <ButtonSecond btnText="Mehr erfahren" />
-
+        <div className="border-l text-2xl flex flex-col h-fit text-[rgba(110,110,115,1)] pb-5">
+          <div className="p-5 border-b">
+            <p>Für Unternehmen bieten wir passgenaue Bewerbervorschläge,
+              professionelle Vorauswahl und Beratung bei Personalfragen — <span className="important-word">schnell</span>,
+              <span className="important-word"> effizient</span> und <span className="important-word">menschlich</span>.</p>
+          </div>
+          <div className="text-[16px] leading-[24px] p-5 pb-10">
+            Wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span className="important-word">Unternehmensberatung</span> und unseren <span className="important-word">Coachings</span> zur Seite.
+          </div>
+          <div className="px-5">
+            <ButtonSecond btnText="Termin buchen" />
+          </div>
         </div>
       </div>
     </>

@@ -1,15 +1,17 @@
 import Welcome from "./components/Welcome"
 import Coaching from "./components/Coaching"
 import Unternehmer from "./components/Unternehmer"
-import Address from "./components/Address"
+import PartnersLogo from "./components/PartnersLogo"
+// import Address from "./components/Address"
 
 export default function Home() {
   return <>
-    <section className="mx-[20px] border-l">
+    <section>
       <Welcome />
       <Coaching />
       <Unternehmer />
-      <Address />
+      <PartnersLogo />
+      {/* <Address /> */}
     </section>
   </>
 }

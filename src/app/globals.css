@@ -4,11 +4,22 @@
   overflow-y: hidden;
 } */
 
-html,
-body,
-#__next {
+/* html {
+  scroll-behavior: auto;
+} */
+
+/* #__next {
   height: 100%;
   overflow-x: hidden;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* min-height: 100%; */
+  /* overflow: auto; */
+  scroll-behavior: auto;
 }
 
 body {
@@ -23,7 +34,8 @@ body {
 
 * {
   box-sizing: border-box;
-  border-color: rgba(205, 211, 220, 1);
+  /* border-color: rgba(205, 211, 220, 1); */
+  border-color: rgba(226, 226, 226, 1);
 }
 
 .bg-dira-blue {
