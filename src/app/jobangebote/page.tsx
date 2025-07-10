@@ -5,7 +5,7 @@ export default function Jobangebote() {
     <>
       <section className="text-[rgba(10,33,61,1)]">
         <div>
-          <p className="text-[80px] leading-[80px] border-b p-5">Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.</p>
+          <p className="text-[75px] leading-[80px] border-b p-5">Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.</p>
           <div className="grid grid-cols-2 text-2xl ">
             <div>
               <p className="p-5 underline underline-offset-10 decoration-1"></p>

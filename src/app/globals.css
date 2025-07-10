@@ -84,10 +84,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 } */
 
+.line {
+  transform: translateY(100%);
+  will-change: transform;
+  height: auto;
+}
+
+/* [class^="line"]:not([class*="other"]) {
+  display: hidden;
+  opacity: 1;
+  overflow: hidden !important;
+} */
+
 .underline-animation {
   position: relative;
   display: inline-block;
-  padding: 5px 0;
+  padding-bottom: 5px;
 }
 .underline-animation::after {
   content: "";
@@ -109,7 +121,7 @@ body {
 .underline-animation-light {
   position: relative;
   display: inline-block;
-  padding: 5px 0;
+  padding-bottom: 5px;
 }
 .underline-animation-light::after {
   content: "";

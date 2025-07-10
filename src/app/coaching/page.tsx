@@ -60,7 +60,7 @@ export default function CoachingPage() {
               <span className="important-word">Nicht irgendein Job.</span> Sondern einer, der dich erfüllt. Einer, der zu dir passt wie ein Schlüssel ins Schloss.            </p>
           </div>
 
-          <p className="text-[80px] leading-[80px] border-b p-5">Langfristige Integration – nicht kurzfristige Lösungen.</p>
+          <p className="text-[75px] leading-[80px] border-b p-5">Langfristige Integration – nicht kurzfristige Lösungen.</p>
 
           <div className="grid grid-cols-2 text-2xl ">
             <div></div>
