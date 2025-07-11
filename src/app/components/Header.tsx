@@ -1,56 +1,19 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import Logo from "./icons/LogoDira"
 import ButtonMain from "./ButtonMain"
 
+
 export default function Header() {
+  const path = usePathname()
+  console.log(path)
+
   const onClick = () => {
     console.log("hi")
     window.open("https://calendly.com/loxonnron/30min")
   }
-
-  // const headerRef = useRef<HTMLElement>(null)
-  // const hiddenRef = useRef(false)
-
-  // useEffect(() => {
-  //   const header = headerRef.current
-
-  //   const onScroll = () => {
-  //     if (!header) return
-
-  //     const scrollTop = window.scrollY
-  //     const scrollHeight = document.documentElement.scrollHeight
-  //     const windowHeight = window.innerHeight
-
-  //     const isBottom = scrollTop + windowHeight >= scrollHeight - 50
-  //     console.log(isBottom)
-
-  //     if (isBottom && !hiddenRef.current) {
-  //       gsap.to(header, {
-  //         opacity: 0,
-  //         duration: 0.1,
-  //         ease: "linear",
-  //         pointerEvents: "none",
-  //         overwrite: "auto",
-  //       })
-  //       hiddenRef.current = true
-  //     } else if (!isBottom && hiddenRef.current) {
-  //       gsap.to(header, {
-  //         opacity: 0,
-  //         duration: 0.1,
-  //         ease: "linear",
-  //         pointerEvents: "none",
-  //         overwrite: "auto",
-  //       })
-  //       hiddenRef.current = false
-  //     }
-  //   }
-
-  //   window.addEventListener("scroll", onScroll)
-
-  //   return () => window.removeEventListener("scroll", onScroll)
-  // }, [])
 
   return (
     <header
@@ -62,23 +25,43 @@ export default function Header() {
       </Link>
 
       <div className="flex gap-5 justify-center items-center text-[rgba(10,33,61,1)]">
-        <Link href="/uber-uns" className="underline-animation">
+        <Link
+          href="/uber-uns"
+          className={`underline-animation ${path === "/uber-uns" ? "text-[rgba(110,110,115,1)] transition-all duration-400" : ""}`}
+        >
           Über Uns
         </Link>
-        <Link href="/coaching" className="underline-animation">
+
+        <Link
+          href="/coaching"
+          className={`underline-animation ${path === "/coaching" ? "text-[rgba(110,110,115,1)] transition-all duration-400" : ""}`}
+        >
           Coaching
         </Link>
+
         <a onClick={onClick} className="cursor-pointer underline-animation">
           Für Unternehmer
         </a>
-        <Link href="/jobangebote" className="underline-animation">
+
+        <Link
+          href="/jobangebote"
+          className={`underline-animation ${path === "/jobangebote" ? "text-[rgba(110,110,115,1)] transition-all duration-400" : ""}`}
+        >
           Jobangebote
         </Link>
-        <Link href="/kontakte" className="underline-animation cursor-pointer">Kontakte</Link>
+
+        <Link
+          href="/kontakte"
+          className={`underline-animation ${path === "/kontakte" ? "text-[rgba(110,110,115,1)] transition-all duration-400" : ""}`}
+        >
+          Kontakte
+        </Link>
+
         <div className="flex gap-2 items-center">
           <p>DE</p>
         </div>
       </div>
+
 
       <div>
         <ButtonMain onClick={onClick} />
