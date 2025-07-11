@@ -1,3 +1,5 @@
+'use client'
+
 import ButtonSecond from "../components/ButtonSecond"
 import TextAnimation from "../components/TextAnimation"
 import Footer from "../components/Footer";
