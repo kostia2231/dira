@@ -50,6 +50,10 @@ body {
   background-color: rgba(255, 250, 240, 1);
 }
 
+.bg-dira-light-opacity {
+  background-color: rgba(255, 250, 240, 0.7);
+}
+
 .text-color-light {
   color: rgba(255, 250, 240, 1);
 }

@@ -55,26 +55,26 @@ export default function Header() {
   return (
     <header
       id="site-header"
-      className="z-50 bg-dira-blue p-5 flex justify-between items-center sticky top-0 w-full"
+      className="z-50  p-5 flex justify-between items-center sticky top-0 w-full bg-dira-light-opacity backdrop-blur-xl border-b"
     >
       <Link href="/">
         <Logo className="h-10 w-auto" />
       </Link>
 
-      <div className="flex gap-5 justify-center items-center text-color-light">
-        <Link href="/uber-uns" className="underline-animation-light">
+      <div className="flex gap-5 justify-center items-center text-[rgba(10,33,61,1)]">
+        <Link href="/uber-uns" className="underline-animation">
           Über Uns
         </Link>
-        <Link href="/coaching" className="underline-animation-light">
+        <Link href="/coaching" className="underline-animation">
           Coaching
         </Link>
-        <a onClick={onClick} className="cursor-pointer underline-animation-light">
+        <a onClick={onClick} className="cursor-pointer underline-animation">
           Für Unternehmer
         </a>
-        <Link href="/jobangebote" className="underline-animation-light">
+        <Link href="/jobangebote" className="underline-animation">
           Jobangebote
         </Link>
-        <a className="underline-animation-light cursor-pointer">Kontakte</a>
+        <Link href="/kontakte" className="underline-animation cursor-pointer">Kontakte</Link>
         <div className="flex gap-2 items-center">
           <p>DE</p>
         </div>

@@ -79,11 +79,13 @@ export default function Footer() {
       </div>
       <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)]">
         <div className="p-5 flex gap-5">
+
+          <p className="underline-animation cursor-pointer">Startseite</p>
           <p className="underline-animation cursor-pointer">Über Uns</p>
           <p className="underline-animation cursor-pointer">Coaching</p>
           <p className="underline-animation cursor-pointer">Für Unternehmer</p>
           <p className="underline-animation cursor-pointer">Jobangebote</p>
-          <p className="underline-animation cursor-pointer">Kontakte</p>
+
         </div>
         <div className="border-l p-5  flex justify-between">
           <div className="flex gap-5">

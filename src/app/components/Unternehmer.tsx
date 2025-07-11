@@ -2,6 +2,7 @@ import ButtonSecond from "./ButtonSecond"
 import ParallaxImageOne from "../components/ParallaxImageOne"
 import TextAnimation from "./TextAnimation"
 import PartnersLogo from "./PartnersLogo"
+import Footer from "./Footer";
 
 
 export default function Unternehmer() {
@@ -44,6 +45,8 @@ export default function Unternehmer() {
       <div className="h-fit">
         <PartnersLogo />
       </div>
+      <Footer />
+
     </>
   )
 }

@@ -1,4 +1,5 @@
 import ButtonSecond from "../components/ButtonSecond"
+import Footer from "../components/Footer"
 
 export default function CoachingPage() {
   return (
@@ -75,6 +76,8 @@ export default function CoachingPage() {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }
