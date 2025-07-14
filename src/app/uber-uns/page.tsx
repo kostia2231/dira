@@ -1,18 +1,18 @@
 'use client'
-
 import ButtonSecond from "../components/ButtonSecond"
 import TextAnimation from "../components/TextAnimation"
 import Footer from "../components/Footer";
 
-
 export default function UberUns() {
   return (
     <>
-      <section className="text-[rgba(10,33,61,1)]">
+      <section className="text-[rgba(44,67,102,1)]">
         <div className="grid">
-          <TextAnimation>
-            <p className="text-[75px] leading-[80px] border-b p-5">Weil Arbeit mehr ist als nur ein Job.</p>
-          </TextAnimation>
+          <div className="border-b p-5">
+            <TextAnimation>
+              <p className="text-[75px] leading-[80px]">Weil Arbeit mehr ist als nur ein Job.</p>
+            </TextAnimation>
+          </div>
           <div className="grid grid-cols-2 text-2xl">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2">Über Uns</p>

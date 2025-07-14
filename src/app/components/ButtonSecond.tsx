@@ -7,11 +7,11 @@ type ButtonSecondProps = {
 }
 
 const ButtonSecond: FC<ButtonSecondProps> = ({ btnText, onClick }) => {
-  return <button onClick={onClick} className="rounded-[2px] cursor-pointer flex items-center justify-between text-color-light text-black text-[16px] uppercase bg-dira-blue w-full text-left pt-5 pb-2.5 px-2.5">
-    <div>
+  return <button onClick={onClick} className="btn-animation rounded-[2px] cursor-pointer text-color-light text-[16px] uppercase bg-dira-blue w-full text-left pt-5 pb-2.5 px-2.5">
+    <span className="flex items-center justify-between">
       {btnText}
-    </div>
-    <ArrowUp />
+      <ArrowUp />
+    </span>
   </button>;
 };
 

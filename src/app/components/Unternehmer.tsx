@@ -12,7 +12,7 @@ export default function Unternehmer() {
         <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
       <div className="border-t grid grid-cols-2">
-        <div className="p-5 flex justify-between text-[rgba(10,33,61,1)]">
+        <div className="p-5 flex justify-between text-[rgba(44,67,102,1)]">
           <TextAnimation>
             <p className="text-[75px] leading-[80px]">Für
               <br />
@@ -32,11 +32,13 @@ export default function Unternehmer() {
               </p>
             </TextAnimation>
           </div>
-          <TextAnimation>
-            <div className="text-[16px] leading-[24px] p-5 pb-10">
-              Wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span className="important-word">Unternehmensberatung</span> und unseren <span className="important-word">Coachings</span> zur Seite.
-            </div>
-          </TextAnimation>
+          <div className="text-[16px] leading-[24px] p-5 pb-10">
+            <TextAnimation>
+              <p>
+                Wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span className="important-word">Unternehmensberatung</span> und unseren <span className="important-word">Coachings</span> zur Seite.
+              </p>
+            </TextAnimation>
+          </div>
           <div className="px-5">
             <ButtonSecond btnText="Termin buchen" />
           </div>

@@ -11,31 +11,37 @@ export default function Footer() {
     <>
       <div className="border-t grid grid-cols-2 border-b">
         <div className="">
-          <div className="flex justify-between text-[rgba(10,33,61,1)]">
-            <TextAnimation>
-              <p className="p-5 text-[75px] leading-[80px]">Kontakte</p>
-            </TextAnimation>
-
+          <div className="flex justify-between text-[rgba(44,67,102,1)]">
+            <div className="p-5">
+              <TextAnimation>
+                <p className="text-[75px] leading-[80px]">Kontakte</p>
+              </TextAnimation>
+            </div>
             {/* <div className="m-5 h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
           </div>
 
         </div>
-        <div className="text-2xl  flex flex-col gap-5  text-[rgba(110,110,115,1)]  border-l">
+        <div className="text-2xl flex flex-col gap-5  text-[rgba(110,110,115,1)] border-l">
           <div className="">
-            <TextAnimation>
-              <p className="p-5 border-b"><span className="important-word">Adresse</span> <br /><span className="">Schöneberger Str. 6, 12103 Berlin-Tempelhof</span></p>
-            </TextAnimation>
+            <div className="p-5 border-b">
+              <TextAnimation>
+                <p><span className="important-word">Adresse</span> <br /><span className="">Schöneberger Str. 6, 12103 Berlin-Tempelhof</span></p>
+              </TextAnimation>
+            </div>
 
-            <TextAnimation>
-              <p className="my-5 text-[16px] leading-[24px] pl-5">
-                Anfahrt mit den öffentlichen Verkehrsmitteln
-                Sie erreichen und mit folgenden öffentlichen Verkehrsmitteln:
-                <br />
-                • U-Bahn: U6 (U-Bahnhof Alt-Tempelhof)
-                <br />
-                • Bus: M46, 140, 246 (Berlinickeplatz)
-              </p>
-            </TextAnimation>
+            <div className="py-5 pl-5">
+              <TextAnimation>
+                <p className="text-[16px] leading-[24px]">
+                  Anfahrt mit den öffentlichen Verkehrsmitteln
+                  Sie erreichen und mit folgenden öffentlichen Verkehrsmitteln:
+                  <br />
+                  • U-Bahn: U6 (U-Bahnhof Alt-Tempelhof)
+                  <br />
+                  • Bus: M46, 140, 246 (Berlinickeplatz)
+                </p>
+              </TextAnimation>
+            </div>
+
 
           </div>
           <div className="px-5">
@@ -64,16 +70,16 @@ export default function Footer() {
             </TextAnimation>
 
           </div>
-          <TextAnimation>
-            <div className="p-5 pb-5 border-t">
+          <div className="p-5 pb-5 border-t">
+            <TextAnimation>
               <p>
                 <span className="important-word">Arbeitsvermittlung</span>
                 <br />
                 <span>
                   <a href="mailto:job.vermittlung@avbr.de" className="underline-animation">job.vermittlung@avbr.de</a>
                 </span></p>
-            </div>
-          </TextAnimation>
+            </TextAnimation>
+          </div>
         </div>
 
       </div>

@@ -24,7 +24,7 @@ export default function Header() {
         <Logo className="h-10 w-auto" />
       </Link>
 
-      <div className="flex gap-5 justify-center items-center text-[rgba(10,33,61,1)]">
+      <div className="flex gap-5 justify-center items-center text-[rgba(44,67,102,1)]">
         <Link
           href="/uber-uns"
           className={`underline-animation ${path === "/uber-uns" ? "text-[rgba(110,110,115,1)] transition-all duration-400" : ""}`}
