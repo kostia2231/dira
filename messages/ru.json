@@ -1,0 +1,28 @@
+{
+  "buttons": {
+    "titleBooking": "Записаться",
+    "titleAdvise": "Бесплатная консультация",
+    "titleLearnMore": "Mehr Erfahren",
+    "titleToJobs": "Zu den Jobangebote",
+    "titleToCart": "Auf der Karte"
+  },
+
+  "header": {
+    "about": "О Нас",
+    "coaching": "Коучинг",
+    "business": "Для Компаний",
+    "jobs": "Вакансии",
+    "contacts": "Контакты"
+  },
+
+  "welcome": {
+    "headline": "Добро пожаловать<br/>в агентство по трудоустройству,<br/>с душой и пониманием",
+    "leftColumn": {
+      "since": "Более {count}-ти лет",
+      "count": "20"
+    },
+    "rightColumn": {
+      "paragraph": "мы сопровождаем людей на пути к немецкому рынку труда — <personal>лично</personal>, <engaged>с полной отдачей</engaged> и <experienced>богатым опытом</experienced>. Будь то новый старт или следующий шаг в карьере — <together>мы пройдём этот путь вместе с вами!</together>"
+    }
+  }
+}

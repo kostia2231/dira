@@ -1,0 +1,28 @@
+{
+  "buttons": {
+    "titleBooking": "Termin Buchen",
+    "titleAdvise": "Kostenlose Erstberatung",
+    "titleLearnMore": "Mehr Erfahren",
+    "titleToJobs": "Zu den Jobangebote",
+    "titleToCart": "Auf der Karte"
+  },
+
+  "header": {
+    "about": "Über Uns",
+    "coaching": "Coaching",
+    "business": "Für Unternehmer",
+    "jobs": "Jobangebote",
+    "contacts": "Kontakte"
+  },
+
+  "welcome": {
+    "headline": "Willkommen<br/>bei Ihrer Arbeitsvermittlung<br/>mit Herz und Verstand",
+    "leftColumn": {
+      "since": "Seit über {count} Jahren",
+      "count": "20"
+    },
+    "rightColumn": {
+      "paragraph": "begleiten wir Menschen auf ihrem Weg in den deutschen Arbeitsmarkt — <personal>persönlich</personal>, <engaged>engagiert</engaged> und <experienced>mit viel Erfahrung</experienced>. Ob Neustart oder nächster Karriereschritt — <together>wir gehen ihn gemeinsam mit Ihnen!</together>"
+    }
+  }
+}

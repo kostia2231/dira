@@ -1,8 +1,8 @@
 'use client'
 
-import ButtonSecond from "../components/ButtonSecond"
-import Footer from "../components/Footer"
-import TextAnimation from "../components/TextAnimation"
+import ButtonSecond from "../../../../components/ButtonSecond"
+import Footer from "../../../../components/Footer"
+import TextAnimation from "../../../../components/TextAnimation"
 
 export default function Jobangebote() {
   return (
