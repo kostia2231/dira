@@ -1,3 +1,68 @@
 {
-  "greet": "UA"
+  "buttons": {
+    "titleBooking": "Записатися",
+    "titleAdvise": "Безкоштовна консультація",
+    "titleLearnMore": "Дізнатися більше",
+    "titleToJobs": "До вакансій",
+    "titleToCart": "На карті"
+  },
+
+  "header": {
+    "about": "Про нас",
+    "coaching": "Коучинг",
+    "business": "Для компаній",
+    "jobs": "Вакансії",
+    "contacts": "Контакти"
+  },
+
+  "welcome": {
+    "headline": "Ласкаво просимо<br/>до агенції з працевлаштування<br/> з серцем та розумінням",
+    "leftColumn": {
+      "since": "Понад {count} років",
+      "count": "20"
+    },
+    "rightColumn": {
+      "paragraph": "ми супроводжуємо людей на шляху до німецького ринку праці — <personal>особисто</personal>, <engaged>з повною віддачею</engaged> та <experienced>багатим досвідом</experienced>. Чи то новий старт, чи наступний крок у кар’єрі — <together>ми пройдемо цей шлях разом із вами!</together>"
+    }
+  },
+
+  "coaching": {
+    "title": "Коучинг",
+    "points": [
+      "Для тих, хто хоче розпочати власну справу.",
+      "Для стабільності та надійності на роботі.",
+      "Для ясності у періоди професійних змін."
+    ],
+    "description": "Ми спеціалізуємося на кандидатах зі Східної Європи, але <span class=\"important-word\">ми відкриті для всіх,</span> хто хоче побудувати кар’єру в Німеччині.",
+    "buttonMore": "Дізнатися більше",
+    "buttonJobs": "Вакансії"
+  },
+
+  "unternehmer": {
+    "titleLine1": "Для",
+    "titleLine2": "Компаній",
+    "description1": "Для компаній ми пропонуємо якісний підбір кандидатів і підтримку в кадрових питаннях — <span class=\"important-word\">швидко</span>, <span class=\"important-word\">ефективно</span> та <span class=\"important-word\">з увагою до людей</span>.",
+    "description2": "Якщо у вашій організації виникають труднощі — чи то інтеграція нових співробітників, реструктуризація чи розвиток персоналу — ми поруч завдяки нашій <span class=\"important-word\">корпоративній консультації</span> та <span class=\"important-word\">коучинговим послугам</span>.",
+    "buttonBook": "Безкоштовна консультація"
+  },
+
+  "footer": {
+    "contacts": "Контакти",
+    "addressLabel": "Адреса",
+    "address": "Schöneberger Str. 6, 12103 Berlin-Tempelhof",
+    "publicTransport": "До нас можна дістатися такими видами громадського транспорту:<br/>• Метро: U6 (U-Bahnhof Alt-Tempelhof)<br/>• Автобуси: M46, 140, 246 (Berlinickeplatz)",
+    "buttonMap": "Відкрити карту",
+    "phoneLabel": "Телефон",
+    "coachingLabel": "Коучинг",
+    "jobPlacementLabel": "Підбір персоналу",
+    "nav": {
+      "startpage": "Головна",
+      "about": "Про нас",
+      "coaching": "Коучинг",
+      "forEntrepreneurs": "Для компаній",
+      "jobOffers": "Вакансії",
+      "mission": "Місія",
+      "imprintPrivacy": "Імпринт та Конфіденційність"
+    }
+  }
 }

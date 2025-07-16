@@ -23,7 +23,7 @@ export default function Welcome() {
         <div className="p-5 flex justify-between flex-col h-full">
           <div className="flex flex-col justify-between text-[rgba(110,110,115,1)] h-full">
             <TextAnimation>
-              <p className="important-word">
+              <p className="important-word underline underline-offset-10 decoration-2">
                 {t("leftColumn.since", { count: t("leftColumn.count") })}
               </p>
             </TextAnimation>
@@ -33,7 +33,7 @@ export default function Welcome() {
 
         <div className="p-5 pr-0 border-l flex flex-col gap-10 text-[rgba(110,110,115,1)]">
           <TextAnimation>
-            <p>
+            <p className="pr-5">
               {t.rich("rightColumn.paragraph", {
                 personal: (chunks) => <span className="important-word">{chunks}</span>,
                 engaged: (chunks) => <span className="important-word">{chunks}</span>,

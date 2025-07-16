@@ -12,7 +12,7 @@ export default function LanguageSwitcher() {
   const ref = useRef<HTMLDivElement>(null)
 
   const parts = pathname?.split("/") || [];
-  const currentLocale = locales.includes(parts[1]) ? parts[1] : "de"; // fallback
+  const currentLocale = locales.includes(parts[1]) ? parts[1] : "de";
   const restOfPath = parts.slice(2).join("/");
 
   const switchLanguage = (newLocale: string) => {
@@ -31,8 +31,22 @@ export default function LanguageSwitcher() {
       }
     };
 
+    const handleWheel = (event: WheelEvent) => {
+      if (
+        ref.current &&
+        !ref.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false)
+      }
+    }
+
+
+    document.addEventListener("wheel", handleWheel);
     document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+      document.removeEventListener("wheel", handleWheel)
+    };
   }, [])
 
   return (

@@ -160,7 +160,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -3px;
+  bottom: -5px;
   height: 2px;
   width: 100%;
   background: rgba(44, 67, 102, 1);

@@ -16,13 +16,53 @@
   },
 
   "welcome": {
-    "headline": "Добро пожаловать<br/>в агентство по трудоустройству,<br/>с душой и пониманием",
+    "headline": "Добро пожаловать<br/>в агентство по трудоустройству<br/>с сердцем и пониманием",
     "leftColumn": {
       "since": "Более {count}-ти лет",
       "count": "20"
     },
     "rightColumn": {
       "paragraph": "мы сопровождаем людей на пути к немецкому рынку труда — <personal>лично</personal>, <engaged>с полной отдачей</engaged> и <experienced>богатым опытом</experienced>. Будь то новый старт или следующий шаг в карьере — <together>мы пройдём этот путь вместе с вами!</together>"
+    }
+  },
+
+  "coaching": {
+    "title": "Коучинг",
+    "points": [
+      "Для тех, кто хочет начать своё дело.",
+      "Для надёжности и стабильности в профессии.",
+      "Для ясности в период профессиональных перемен."
+    ],
+    "description": "Мы специализируемся на кандидатах из Восточной Европы, однако <span class=\"important-word\">мы открыты для всех</span>, кто хочет построить карьеру в Германии.",
+    "buttonMore": "Узнать Больше",
+    "buttonJobs": "Вакансии"
+  },
+
+  "unternehmer": {
+    "titleLine1": "Для",
+    "titleLine2": "Компаний",
+    "description1": "Для компаний мы предлагаем качественный подбор кандидатов и поддержку в кадровых вопросах — <span class=\"important-word\">быстро</span>,<span class=\"important-word\"> эффективно</span> и <span class=\"important-word\">с вниманием к людям</span>.",
+    "description2": "Если в вашей организации возникают трудности – будь то интеграция новых сотрудников, реструктуризация или развитие персонала – мы рядом с вами благодаря нашей <span class=\"important-word\">корпоративной консультации</span> и <span class=\"important-word\">коучинговым услугам</span>.",
+    "buttonBook": "Бесплатная консультация"
+  },
+
+  "footer": {
+    "contacts": "Контакты",
+    "addressLabel": "Адрес",
+    "address": "Schöneberger Str. 6, 12103 Berlin-Tempelhof",
+    "publicTransport": "До нас можно добраться следующими видами общественного транспорта:<br/>• Метро: U6 (U-Bahnhof Alt-Tempelhof)<br/>• Автобусы: M46, 140, 246 (Berlinickeplatz)",
+    "buttonMap": "Открыть Карту",
+    "phoneLabel": "Телефон",
+    "coachingLabel": "Коучинг",
+    "jobPlacementLabel": "Подбор персонала",
+    "nav": {
+      "startpage": "Главная",
+      "about": "О Нас",
+      "coaching": "Коучинг",
+      "forEntrepreneurs": "Для компаний",
+      "jobOffers": "Вакансии",
+      "mission": "Миссия",
+      "imprintPrivacy": "Импринт и Конфиденциальность"
     }
   }
 }

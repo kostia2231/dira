@@ -24,5 +24,45 @@
     "rightColumn": {
       "paragraph": "begleiten wir Menschen auf ihrem Weg in den deutschen Arbeitsmarkt — <personal>persönlich</personal>, <engaged>engagiert</engaged> und <experienced>mit viel Erfahrung</experienced>. Ob Neustart oder nächster Karriereschritt — <together>wir gehen ihn gemeinsam mit Ihnen!</together>"
     }
+  },
+
+  "coaching": {
+    "title": "Coaching",
+    "points": [
+      "Für Menschen, die gründen wollen.",
+      "Für mehr Stabilität am Arbeitsplatz.",
+      "Für Klarheit in beruflichen Umbruchphasen."
+    ],
+    "description": "Unser Schwerpunkt liegt auf Bewerber:innen aus Osteuropa — aber <span class=\"important-word\">wir sind offen für alle</span>, die in Deutschland beruflich Fuß fassen wollen.",
+    "buttonMore": "Mehr erfahren",
+    "buttonJobs": "ZU DEN Jobangebote"
+  },
+
+  "unternehmer": {
+    "titleLine1": "Für",
+    "titleLine2": "Unternehmer",
+    "description1": "Für Unternehmen bieten wir passgenaue Bewerbervorschläge, professionelle Vorauswahl und Beratung bei Personalfragen — <span class=\"important-word\">schnell</span>,<span class=\"important-word\"> effizient</span> und <span class=\"important-word\">menschlich</span>.",
+    "description2": "Wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span class=\"important-word\">Unternehmensberatung</span> und unseren <span class=\"important-word\">Coachings</span> zur Seite.",
+    "buttonBook": "Termin buchen"
+  },
+
+  "footer": {
+    "contacts": "Kontakte",
+    "addressLabel": "Adresse",
+    "address": "Schöneberger Str. 6, 12103 Berlin-Tempelhof",
+    "publicTransport": "Sie erreichen uns mit folgenden öffentlichen Verkehrsmitteln:<br/>• U-Bahn: U6 (U-Bahnhof Alt-Tempelhof)<br/>• Bus: M46, 140, 246 (Berlinickeplatz)",
+    "buttonMap": "auf der Karte",
+    "phoneLabel": "Telefon",
+    "coachingLabel": "Coaching",
+    "jobPlacementLabel": "Arbeitsvermittlung",
+    "nav": {
+      "startpage": "Startseite",
+      "about": "Über Uns",
+      "coaching": "Coaching",
+      "forEntrepreneurs": "Für Unternehmer",
+      "jobOffers": "Jobangebote",
+      "mission": "Leitbild",
+      "imprintPrivacy": "Impressum & Datenschutz"
+    }
   }
 }
