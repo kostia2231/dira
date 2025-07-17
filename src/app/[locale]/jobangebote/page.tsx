@@ -3,8 +3,13 @@
 import ButtonSecond from "../../../../components/ButtonSecond"
 import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
+import { useTranslations } from "next-intl"
 
 export default function Jobangebote() {
+
+  const t = useTranslations("vacancies")
+  const btn = useTranslations("buttons")
+
   return (
     <>
       <section className="text-[rgba(44,67,102,1)]">
@@ -12,7 +17,7 @@ export default function Jobangebote() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.</p>
+              <p className="text-[75px] leading-[80px]">{t("title")}</p>
             </TextAnimation>
           </div>
 
@@ -22,20 +27,18 @@ export default function Jobangebote() {
             <div className="border-l text-gray-500">
               <div className="p-5">
                 <TextAnimation>
-                  <p>Du suchst nicht irgendeinen Job, sondern eine Aufgabe mit Perspektive? <br />Wir bringen dich mit Arbeitgebern zusammen, die genau dich suchen.</p>
+                  <p>{t("sectionText1")} <br /><span className="important-word">{t("sectionText2")}</span></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p className="text-[16px] leading-[24px]">Ob <span className="important-word">Lager</span>, <span className="important-word">Pflege</span>, <span className="important-word">Büro</span>, <span className="important-word">Technik</span> oder <span className="important-word">Gastronomie</span> – unsere Stellenangebote sind vielfältig, aktuell und auf deine Qualifikation abgestimmt.
-                    Mit persönlicher Beratung, Bewerbungscoaching und gezielter Vorbereitung begleiten wir dich auf dem Weg zur passenden Stelle.
-                    <br /> <br />Schau regelmäßig vorbei – dein neuer Job könnte schon morgen hier stehen.</p>
+                  <p className="text-[16px] leading-[24px]" dangerouslySetInnerHTML={{ __html: t.raw("sectionText3") }}></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5">
-                <ButtonSecond btnText="Beratung erhalten" />
+                <ButtonSecond btnText={`${btn("titleAdvise")}`} />
               </div>
             </div>
           </div>

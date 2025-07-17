@@ -129,5 +129,12 @@
     "quote": "Langfristige Integration – nicht kurzfristige Lösungen.",
 
     "finalMessage": "<span class=\"important-word\">Wir glauben an dich.</span> Auch dann, wenn du selbst vielleicht gerade zweifelst. Komm vorbei. Lass uns reden. Und gemeinsam den nächsten Schritt machen – raus aus der Warteschleife, rein ins Arbeitsleben."
+  },
+
+  "vacancies": {
+    "title": "Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.",
+    "sectionText1": "Du suchst nicht irgendeinen Job, sondern eine Aufgabe mit Perspektive?",
+    "sectionText2": "Wir bringen dich mit Arbeitgebern zusammen, die genau dich suchen.",
+    "sectionText3": "Ob <span class=\"important-word\">Lager</span>, <span class=\"important-word\">Pflege</span>, <span class=\"important-word\">Büro</span>, <span class=\"important-word\">Technik</span> oder <span class=\"important-word\">Gastronomie</span> – unsere Stellenangebote sind vielfältig, aktuell und auf deine Qualifikation abgestimmt. Mit persönlicher Beratung, Bewerbungscoaching und gezielter Vorbereitung begleiten wir dich auf dem Weg zur passenden Stelle.<br /> <br /> <span class=\"important-word\">Schau regelmäßig vorbei – dein neuer Job könnte schon morgen hier stehen.</span>"
   }
 }
