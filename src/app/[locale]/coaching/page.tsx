@@ -3,8 +3,12 @@
 import ButtonSecond from "../../../../components/ButtonSecond"
 import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
+import { useTranslations } from "next-intl"
 
 export default function CoachingPage() {
+  const t = useTranslations("coachingPage")
+  const btn = useTranslations("buttons")
+
   return (
     <div className="">
       <section className="text-[rgba(44,67,102,1)] ">
@@ -12,7 +16,7 @@ export default function CoachingPage() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[80px] leading-[80px]">Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.</p>
+              <p className="text-[80px] leading-[80px]">{t("headline")}</p>
             </TextAnimation>
           </div>
 
@@ -21,17 +25,17 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">Coaching</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">{t("section1Title")}</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className=" text-gray-500">
-                  <span className="important-word">Du suchst Arbeit – aber nicht irgendeinen Job.</span> Du suchst eine Aufgabe, die zu dir passt. Einen Platz, an dem du ankommen kannst. <span className="important-word">Wir helfen dir, diesen Platz zu finden.</span>
-                  <br /> <span><br />
-                    Vielleicht fühlst du dich gerade wie ein Schiff ohne Kompass – irgendwo zwischen Bewerbungsschreiben, Vorstellungsgesprächen und Formularen verloren. Keine Sorge: <span className="important-word">Wir kennen diese Gewässer.</span> Und wir wissen, wie man sicher durch den Sturm navigiert.
-                  </span>
+                <p className=" text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("section1Text") }}>
+                </p>
+              </TextAnimation>
+              <TextAnimation>
+                <p className=" text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("section1Text1") }}>
                 </p>
               </TextAnimation>
             </div>
@@ -42,14 +46,13 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">Was uns ausmacht</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">{t("section2Title")}</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-gray-500">
-                  <span className="important-word">Wir hören zu. Wir stellen Fragen.</span> Und wir sehen mehr in dir als nur deinen Lebenslauf. Gemeinsam mit dir erstellen wir ein klares Profil, das zeigt, was du kannst – und wohin du willst.
+                <p className="text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("section2Text") }}>
                 </p>
               </TextAnimation>
             </div>
@@ -60,7 +63,7 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">Unsere Leistungen</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">{t("section3Title")}</p>
               </TextAnimation>
             </div>
 
@@ -69,63 +72,56 @@ export default function CoachingPage() {
               <div className="p-5">
                 <TextAnimation>
                   <p>
-                    Maßgeschneidert statt von der Stange:
+                    {t("section3Intro")}
                   </p>
                 </TextAnimation>
               </div>
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>
-                    <span className="important-word">• Individuelle Beratung</span>: Wir nehmen uns Zeit für dich. In persönlichen Gesprächen entwickeln wir gemeinsam eine Strategie, die zu dir und deinem Leben passt.
-                  </p>
-                </TextAnimation>
-              </div>
-
-              <div className="p-5 border-t">
-                <TextAnimation>
-                  <p>
-                    <span className="important-word">• Weiterbildung & Qualifikation</span>: Manchmal fehlt nur ein kleiner Baustein, um Türen zu öffnen. Wir zeigen dir, welche Fortbildungen dich weiterbringen – und wie du sie finanzieren kannst.
-                  </p>
-                </TextAnimation>
-              </div>
-
-
-              <div className="p-5 border-t">
-                <TextAnimation>
-                  <p>
-                    <span className="important-word">• Bewerbung mit Wirkung</span>: Deine Bewerbung ist dein Aushängeschild. Wir helfen dir, sie so zu gestalten, dass sie nicht im Stapel untergeht, sondern auffällt – positiv und professionell.
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("advice") }}>
                   </p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>
-                    <span className="important-word">• Praktika als Türöffner</span>: Theorie ist wichtig – Praxis noch mehr. Wir vermitteln dir Praktikumsplätze in Unternehmen, in denen du zeigen kannst, was in dir steckt.
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("education") }}>
+                  </p>
+                </TextAnimation>
+              </div>
+
+
+              <div className="p-5 border-t">
+                <TextAnimation>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("application") }}>
                   </p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>
-                    <span className="important-word">• Förderung & Finanzierung</span>: Vom AVGS-Gutschein bis zur Bildungsprämie – wir wissen, welche Unterstützung es gibt und wie du sie bekommst.
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("internship") }}>
                   </p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>
-                    <span className="important-word">• Coaching für Existenzgründer:innen</span>: Du hast eine Idee, Mut und Visionen? Dann begleiteten wir dich auf deinem Weg in die Selbstständigkeit. Ob Handwerk, Dienstleistung oder Online-Business – wir helfen dir, dein Konzept zu schärfen, realistisch zu planen und dein eigenes Unternehmen auf stabile Beine zu stellen.
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("support") }}>
                   </p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>
-                    <span className="important-word">• Coaching zur Stabilisierung am Arbeitsplatz</span>: Endlich im Job – und dann? Wir sind auch nach der Vermittlung für dich da. Mit gezieltem Coaching unterstützen wir dich dabei, dich im Arbeitsalltag zurechtzufinden, Konflikte zu lösen und langfristig im neuen Beruf anzukommen.
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("founders") }}>
+                  </p>
+                </TextAnimation>
+              </div>
+
+              <div className="p-5 border-t">
+                <TextAnimation>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("stabilization") }}>
                   </p>
                 </TextAnimation>
               </div>
@@ -136,14 +132,13 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">Unser Ziel</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">{t("section4Title")}</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-gray-500">
-                  <span className="important-word">Nicht irgendein Job.</span> Sondern einer, der dich erfüllt. Einer, der zu dir passt wie ein Schlüssel ins Schloss.
+                <p className="text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("section4Text") }}>
                 </p>
               </TextAnimation>
             </div>
@@ -151,7 +146,7 @@ export default function CoachingPage() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Langfristige Integration – nicht kurzfristige Lösungen.</p>
+              <p className="text-[75px] leading-[80px]">{t("quote")}</p>
             </TextAnimation>
           </div>
 
@@ -160,14 +155,13 @@ export default function CoachingPage() {
             <div className="border-l">
               <div className="p-5">
                 <TextAnimation>
-                  <p className="text-gray-500">
-                    <span className="important-word">Wir glauben an dich.</span> Auch dann, wenn du selbst vielleicht gerade zweifelst. Komm vorbei. Lass uns reden. Und gemeinsam den nächsten Schritt machen – raus aus der Warteschleife, rein ins Arbeitsleben.
+                  <p className="text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("finalMessage") }}>
                   </p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 pb-5">
-                <ButtonSecond btnText="Kostenlose Erstberatung" />
+                <ButtonSecond btnText={`${btn("titleAdvise")}`} />
               </div>
             </div>
           </div>

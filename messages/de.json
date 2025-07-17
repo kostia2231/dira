@@ -101,5 +101,33 @@
 
     "suc": "Ihr Erfolg ist unser Ziel.",
     "suc1": "Bei uns beginnt alles mit einem Gespräch.<br /><span class=\"important-word\">Komm vorbei. Ruf uns an. Schreib uns. </span>Und dann gehen wir den Weg gemeinsam."
+  },
+
+  "coachingPage": {
+    "headline": "Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.",
+    "section1Title": "Coaching",
+    "section1Text": "<span class=\"important-word\">Du suchst Arbeit – aber nicht irgendeinen Job.</span> Du suchst eine Aufgabe, die zu dir passt. Einen Platz, an dem du ankommen kannst. <span class=\"important-word\">Wir helfen dir, diesen Platz zu finden.</span><br />",
+    "section1Text1": "<span class=\"\"> <br />Vielleicht fühlst du dich gerade wie ein Schiff ohne Kompass – irgendwo zwischen Bewerbungsschreiben, Vorstellungsgesprächen und Formularen verloren. Keine Sorge: <span class=\"important-word\">Wir kennen diese Gewässer.</span> Und wir wissen, wie man sicher durch den Sturm navigiert.</span>",
+
+    "section2Title": "Was uns ausmacht",
+    "section2Text": "<span class=\"important-word\">Wir hören zu. Wir stellen Fragen.</span> Und wir sehen mehr in dir als nur deinen Lebenslauf. Gemeinsam mit dir erstellen wir ein klares Profil, das zeigt, was du kannst – und wohin du willst.",
+
+    "section3Title": "Unsere Leistungen",
+    "section3Intro": "Maßgeschneidert statt von der Stange:",
+
+    "advice": "<span class=\"important-word\">• Individuelle Beratung</span>: Wir nehmen uns Zeit für dich. In persönlichen Gesprächen entwickeln wir gemeinsam eine Strategie, die zu dir und deinem Leben passt.",
+    "education": "<span class=\"important-word\">• Weiterbildung & Qualifikation</span>: Manchmal fehlt nur ein kleiner Baustein, um Türen zu öffnen. Wir zeigen dir, welche Fortbildungen dich weiterbringen – und wie du sie finanzieren kannst.",
+    "application": "<span class=\"important-word\">• Bewerbung mit Wirkung</span>: Deine Bewerbung ist dein Aushängeschild. Wir helfen dir, sie so zu gestalten, dass sie nicht im Stapel untergeht, sondern auffällt – positiv und professionell.",
+    "internship": "<span class=\"important-word\">• Praktika als Türöffner</span>: Theorie ist wichtig – Praxis noch mehr. Wir vermitteln dir Praktikumsplätze in Unternehmen, in denen du zeigen kannst, was in dir steckt.",
+    "support": "<span class=\"important-word\">• Förderung & Finanzierung</span>: Vom AVGS-Gutschein bis zur Bildungsprämie – wir wissen, welche Unterstützung es gibt und wie du sie bekommst.",
+    "founders": "<span class=\"important-word\">• Coaching für Existenzgründer:innen</span>: Du hast eine Idee, Mut und Visionen? Dann begleiteten wir dich auf deinem Weg in die Selbstständigkeit. Ob Handwerk, Dienstleistung oder Online-Business – wir helfen dir, dein Konzept zu schärfen, realistisch zu planen und dein eigenes Unternehmen auf stabile Beine zu stellen.",
+    "stabilization": "<span class=\"important-word\">• Coaching zur Stabilisierung am Arbeitsplatz</span>: Endlich im Job – und dann? Wir sind auch nach der Vermittlung für dich da. Mit gezieltem Coaching unterstützen wir dich dabei, dich im Arbeitsalltag zurechtzufinden, Konflikte zu lösen und langfristig im neuen Beruf anzukommen.",
+
+    "section4Title": "Unser Ziel",
+    "section4Text": "<span class=\"important-word\">Nicht irgendein Job.</span> Sondern einer, der dich erfüllt. Einer, der zu dir passt wie ein Schlüssel ins Schloss.",
+
+    "quote": "Langfristige Integration – nicht kurzfristige Lösungen.",
+
+    "finalMessage": "<span class=\"important-word\">Wir glauben an dich.</span> Auch dann, wenn du selbst vielleicht gerade zweifelst. Komm vorbei. Lass uns reden. Und gemeinsam den nächsten Schritt machen – raus aus der Warteschleife, rein ins Arbeitsleben."
   }
 }
