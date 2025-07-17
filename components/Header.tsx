@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
 import Logo from "./icons/LogoDira";
 import ButtonMain from "./ButtonMain";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslations } from "next-intl";
 
 export default function Header() {
   const t = useTranslations("header");
@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header
       id="site-header"
-      className="font-semibold z-50 p-5 flex justify-between items-center sticky top-0 w-full bg-dira-light-opacity backdrop-blur-xl border-b"
+      className="max-[600px]:hidden font-semibold z-50 p-5 flex justify-between items-center sticky top-0 w-full bg-dira-light-opacity backdrop-blur-xl border-b"
     >
       <Link href={locale ? `/${locale}` : "/"}>
         <Logo className="h-10 w-auto" />

@@ -2,6 +2,7 @@
 import { Manrope } from "next/font/google";
 import "../globals.css";
 import Header from "../../../components/Header";
+import HeaderMobile from "../../../components/mobile/HeaderMobile";
 import { Providers } from "../providers";
 
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
@@ -33,6 +34,7 @@ export default async function RootLayout({
         <NextIntlClientProvider>
           <Providers>
 
+            <HeaderMobile />
             <Header />
             {children}
 
