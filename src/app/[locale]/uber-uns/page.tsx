@@ -1,40 +1,43 @@
 // исправить тут дивы в параграфах
 'use client'
+
 import TextAnimation from "../../../../components/TextAnimation"
 import ButtonSecond from "../../../../components/ButtonSecond"
 import Footer from "../../../../components/Footer"
+import { useTranslations } from "next-intl"
 
 export default function UberUns() {
+
+  const t = useTranslations("aboutUs")
+  const btn = useTranslations("buttons")
+
   return (
     <>
       <section className="text-[rgba(44,67,102,1)]">
         <div className="grid">
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Weil Arbeit mehr ist als nur ein Job.</p>
+              <p className="text-[75px] leading-[80px]">{t("why")}</p>
             </TextAnimation>
           </div>
           <div className="grid grid-cols-2 text-2xl">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Über Uns</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("about")}</p>
             </TextAnimation>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-[rgba(110,110,115,1)]">
+                <p className="text-gray-500">
                   <span>
-                    Stell dir vor, du stehst an einem Bahnsteig. In der Hand: dein Koffer voller Erfahrungen, Fähigkeiten und Hoffnungen. Du wartest auf den Zug in Richtung Zukunft – aber welcher ist der richtige? Und wo fährt er überhaupt hin?
+                    {t("about1")}
                   </span>
 
                   <br />
                   <span>
                     <br />
-                    Genau hier kommen wir ins Spiel.
+                    {t("about2")}
                   </span>
-
-                  <span>
-                    <br />
-                    Wir sind <span className="important-word">eine private Arbeitsvermittlungsagentur</span> – mit offenen Ohren, klarem Kompass und jeder Menge Erfahrung. <br /> <br />Seit über 20 Jahren begleiten wir Menschen wie dich auf ihrem Weg in eine neue berufliche Zukunft. Egal, ob du Arbeit suchst, ein Unternehmen führen willst oder bereits einen Job hast, aber Unterstützung brauchst: <span className="important-word">Wir stehen an deiner Seite.</span>
+                  <span dangerouslySetInnerHTML={{ __html: t.raw("about3") }}>
                   </span>
                 </p>
               </TextAnimation>
@@ -45,25 +48,18 @@ export default function UberUns() {
 
           <div className="p-5 border-t">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Persönlich. Engagiert. Zielgerichtet.</p>
+              <p className="text-[75px] leading-[80px]">{t("how")}</p>
             </TextAnimation>
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Was wir für Arbeitssuchende tun</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("what")}</p>
             </TextAnimation>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-[rgba(110,110,115,1)]">
-                  Ganz einfach: <span className="important-word">Wir machen Chancen sichtbar.</span> <br />
-                  Ob du gerade erst in Deutschland angekommen bist oder schon länger suchst – wir holen dich genau dort ab, wo du stehst.
-                  <br />
-                  <span><br />Gemeinsam entwickeln wir ein klares Profil, das zeigt, was dich ausmacht. Wir helfen dir, Bewerbungen zu schreiben, Vorstellungsgespräche zu meistern und die passende Stelle zu finden. Aber nicht irgendeine – <span className="important-word">eine, die wirklich zu dir passt.</span>
-                  </span>
-                  <br />
-                  <span> <br />Und weil Wissen Türen öffnet, beraten wir dich auch zu Weiterbildungen und Qualifizierungen. Du willst gründen? Auch gut! Mit unserem <span className="important-word">Existenzgründungscoaching</span> machen wir aus deiner Idee ein tragfähiges Geschäft.</span>
+                <p className="text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("what1") }}>
                 </p>
               </TextAnimation>
             </div>
@@ -71,19 +67,16 @@ export default function UberUns() {
 
           <div className="grid grid-cols-2 text-2xl border-t">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Was wir für Unternehmen tun</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("whatB")}</p>
             </TextAnimation>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-[rgba(110,110,115,1)]">
-                  Sie suchen Mitarbeiter:innen, die wirklich passen? Die nicht nur den Lebenslauf erfüllen, sondern auch ins Team und zur Unternehmenskultur?
-                  Dann sind Sie bei uns genau richtig.
-                  <br /> <span><br />
-                    Wir bieten <span className="important-word">maßgeschneiderte Personalvermittlung</span> – schnell, effizient und individuell. Kein Massenversand, keine Karteileichen. Sondern gezielte Vorauswahl, direkte Kommunikation und Bewerber:innen mit Perspektive.
+                <p className="text-gray-500">
+                  {t("whatB1")}
+                  <br /> <span dangerouslySetInnerHTML={{ __html: t.raw("whatB2") }}>
                   </span>
-                  <br /> <span><br />
-                    Und wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span className="important-word">Unternehmensberatung</span> und unseren <span className="important-word">Coachings</span> zur Seite.
+                  <br /> <span dangerouslySetInnerHTML={{ __html: t.raw("whatB3") }}>
                   </span>
                 </p>
               </TextAnimation>
@@ -93,37 +86,35 @@ export default function UberUns() {
 
           <div className="grid grid-cols-2 text-2xl border-t">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Und was ist mit Coaching</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("coaching")}</p>
             </TextAnimation>
 
-            <div className="border-l text-[rgba(110,110,115,1)]">
+            <div className="border-l text-gray-500">
               <TextAnimation>
-                <p className="p-5">
-                  Manchmal braucht es nicht den nächsten Job – sondern den nächsten Schritt im Kopf.
-                  In unseren <span className="important-word">individuellen Coaching-Programmen</span> begleiten wir Menschen in ganz verschiedenen Lebensphasen:
+                <p className="p-5" dangerouslySetInnerHTML={{ __html: t.raw("coaching1") }}>
                 </p>
               </TextAnimation>
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p><span className="important-word">• Für Gründer:innen</span>, die ihr eigenes Business aufbauen wollen.</p>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("coaching2") }}></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p><span className="important-word">• Für Berufseinsteiger:innen</span> und Rückkehrer:innen, die Orientierung suchen.</p>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("coaching3") }}></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p><span className="important-word">• Für Menschen im Job</span>, die Stabilität, Selbstsicherheit und Klarheit gewinnen möchten.</p>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("coaching4") }}></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>Unser Coaching ist keine Schablone – sondern ein Kompass, den wir gemeinsam entwickeln. Damit du wieder in deine Kraft kommst und deinen Weg mit Überzeugung gehst.</p>
+                  <p>{t("coaching5")}</p>
                 </TextAnimation>
               </div>
             </div>
@@ -131,12 +122,11 @@ export default function UberUns() {
 
           <div className="grid grid-cols-2 text-2xl border-t">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Wem wir helfen</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("who")}</p>
             </TextAnimation>
-            <div className="border-l text-[rgba(110,110,115,1)]">
+            <div className="border-l text-gray-500">
               <TextAnimation>
-                <p className="p-5">
-                  Unser Herz schlägt besonders für Menschen aus dem osteuropäischen Raum – aber bei uns sind <span className="important-word">alle Nationen</span>, <span className="important-word">alle Altersgruppen</span>, <span className="important-word">alle Lebensgeschichten</span> willkommen. Vielfalt ist kein Schlagwort für uns, sondern gelebte Realität.
+                <p className="p-5" dangerouslySetInnerHTML={{ __html: t.raw("who1") }}>
                 </p>
               </TextAnimation>
 
@@ -145,38 +135,35 @@ export default function UberUns() {
 
           <div className="p-5 border-t">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Wir glauben an Potenzial. Auch dort, wo andere es übersehen.</p>
+              <p className="text-[75px] leading-[80px]">{t("pot")}</p>
             </TextAnimation>
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t">
             <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2">Was uns ausmacht</p>
+              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("potWhat")}</p>
             </TextAnimation>
 
-            <div className="border-l text-[rgba(110,110,115,1)]">
+            <div className="border-l text-gray-500">
               <TextAnimation>
-                <p className="p-5"><span className="important-word">• Echte Menschen statt automatisierter Abläufe.</span></p>
+                <p className="p-5"><span className="important-word">{t("potWhat1")}</span></p>
               </TextAnimation>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p><span className="important-word">• Tiefe Gespräche statt oberflächlicher Beratung.</span></p>
+                  <p><span className="important-word">{t("potWhat2")}</span></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p><span className="important-word">• Lösungen mit Substanz statt schneller Versprechen.</span></p>
+                  <p><span className="important-word">{t("potWhat3")}</span></p>
                 </TextAnimation>
               </div>
 
               <div className="p-5 border-t">
                 <TextAnimation>
-                  <p>Mit unseren starken Netzwerken, unserem breiten Know-how und einem offenen Herzen schaffen wir nicht nur <span className="important-word">Zugang zum Arbeitsmarkt</span>, sondern auch <span className="important-word">Zugang zu neuen Lebenswegen.</span>
-                    <br /> <span><br />
-                      Denn: Ein erfüllender Beruf verändert nicht nur den Kontostand – sondern das ganze Leben.
-                    </span>
+                  <p dangerouslySetInnerHTML={{ __html: t.raw("potWhat4") }}>
                   </p>
                 </TextAnimation>
               </div>
@@ -186,7 +173,7 @@ export default function UberUns() {
 
           <div className="p-5 border-t border-b">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">Ihr Erfolg ist unser Ziel.</p>
+              <p className="text-[75px] leading-[80px]">{t("suc")}</p>
             </TextAnimation>
           </div>
 
@@ -195,13 +182,10 @@ export default function UberUns() {
             <div className="border-l p-5 grid pb-0">
 
               <TextAnimation>
-                <p className="text-2xl text-[rgba(110,110,115,1)]">Bei uns beginnt alles mit einem Gespräch.
-                  <br />
-                  <span className="important-word">Komm vorbei. Ruf uns an. Schreib uns. </span>
-                  Und dann gehen wir den Weg gemeinsam.</p>
+                <p className="text-2xl text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("suc1") }}></p>
               </TextAnimation>
               <div className="pt-10 pb-5">
-                <ButtonSecond btnText="Kostenlose Erstberatung" />
+                <ButtonSecond btnText={`${btn("titleAdvise")}`} />
               </div>
               <div></div>
 

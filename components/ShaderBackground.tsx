@@ -24,7 +24,7 @@ export default function Footer() {
             {/* <div className="m-5 h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
           </div>
         </div>
-        <div className="text-2xl flex flex-col gap-5 text-gray-500 border-l">
+        <div className="text-2xl flex flex-col gap-5 text-[rgba(110,110,115,1)] border-l">
           <div>
             <div className="p-5 border-b">
               <TextAnimation>
@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)] font-semibold">
+      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)]">
         <div className="p-5 flex gap-5">
           <p className="underline-animation cursor-pointer">{t("nav.startpage")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.about")}</p>

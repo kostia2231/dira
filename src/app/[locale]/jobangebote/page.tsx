@@ -19,7 +19,7 @@ export default function Jobangebote() {
 
           <div className="grid grid-cols-2 text-2xl">
             <div></div>
-            <div className="border-l text-[rgba(110,110,115,1)]">
+            <div className="border-l text-gray-500">
               <div className="p-5">
                 <TextAnimation>
                   <p>Du suchst nicht irgendeinen Job, sondern eine Aufgabe mit Perspektive? <br />Wir bringen dich mit Arbeitgebern zusammen, die genau dich suchen.</p>
@@ -43,7 +43,7 @@ export default function Jobangebote() {
             <div>
               <p className="p-5 underline underline-offset-10 decoration-1">Für Arbeitgeber</p>
             </div>
-            <div className="border-l text-[rgba(110,110,115,1)]">
+            <div className="border-l text-gray-500">
               <p className="p-5">Sie suchen verlässliche Mitarbeiter:innen? Wir vermitteln qualifizierte Bewerber:innen schnell, passend und persönlich.</p>
             </div>
           </div> */}

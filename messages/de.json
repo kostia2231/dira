@@ -64,5 +64,42 @@
       "mission": "Leitbild",
       "imprintPrivacy": "Impressum & Datenschutz"
     }
+  },
+
+  "aboutUs": {
+    "why": "Weil Arbeit mehr ist als nur ein Job.",
+    "about": "Über Uns",
+    "about1": "Stell dir vor, du stehst an einem Bahnsteig. In der Hand: dein Koffer voller Erfahrungen, Fähigkeiten und Hoffnungen. Du wartest auf den Zug in Richtung Zukunft – aber welcher ist der richtige? Und wo fährt er überhaupt hin?",
+    "about2": "Genau hier kommen wir ins Spiel.",
+    "about3": "<br />Wir sind <span class=\"important-word\">eine private Arbeitsvermittlungsagentur</span> – mit offenen Ohren, klarem Kompass und jeder Menge Erfahrung. <br /> <br />Seit über 20 Jahren begleiten wir Menschen wie dich auf ihrem Weg in eine neue berufliche Zukunft. Egal, ob du Arbeit suchst, ein Unternehmen führen willst oder bereits einen Job hast, aber Unterstützung brauchst: <span class=\"important-word\">Wir stehen an deiner Seite.</span>",
+
+    "how": "Persönlich. Engagiert. Zielgerichtet.",
+    "what": "Was wir für Arbeitssuchende tun",
+    "what1": "Ganz einfach: <span class=\"important-word\">Wir machen Chancen sichtbar.</span> <br />Ob du gerade erst in Deutschland angekommen bist oder schon länger suchst – wir holen dich genau dort ab, wo du stehst.<br /><span><br />Gemeinsam entwickeln wir ein klares Profil, das zeigt, was dich ausmacht. Wir helfen dir, Bewerbungen zu schreiben, Vorstellungsgespräche zu meistern und die passende Stelle zu finden. Aber nicht irgendeine – <span class=\"important-word\">eine, die wirklich zu dir passt.</span></span><br /><span> <br />Und weil Wissen Türen öffnet, beraten wir dich auch zu Weiterbildungen und Qualifizierungen. Du willst gründen? Auch gut! Mit unserem <span class=\"important-word\">Existenzgründungscoaching</span> machen wir aus deiner Idee ein tragfähiges Geschäft.</span>",
+
+    "whatB": "Was wir für Unternehmen tun",
+    "whatB1": "Sie suchen Mitarbeiter:innen, die wirklich passen? Die nicht nur den Lebenslauf erfüllen, sondern auch ins Team und zur Unternehmenskultur? Dann sind Sie bei uns genau richtig.",
+    "whatB2": "<br />Wir bieten <span class=\"important-word\">maßgeschneiderte Personalvermittlung</span> – schnell, effizient und individuell. Kein Massenversand, keine Karteileichen. Sondern gezielte Vorauswahl, direkte Kommunikation und Bewerber:innen mit Perspektive.",
+    "whatB3": "<br />Und wenn es in Ihrem Unternehmen gerade hakt – sei es bei der Integration neuer Mitarbeitender, bei Umstrukturierungen oder Personalentwicklung – stehen wir Ihnen mit unserer <span class=\"important-word\">Unternehmensberatung</span> und unseren <span class=\"important-word\">Coachings</span> zur Seite.",
+
+    "coaching": "Und was ist mit Coaching",
+    "coaching1": "Manchmal braucht es nicht den nächsten Job – sondern den nächsten Schritt im Kopf. In unseren <span class=\"important-word\">individuellen Coaching-Programmen</span> begleiten wir Menschen in ganz verschiedenen Lebensphasen:",
+    "coaching2": "<span class=\"important-word\">• Für Gründer:innen</span>, die ihr eigenes Business aufbauen wollen.",
+    "coaching3": "<span class=\"important-word\">• Für Berufseinsteiger:innen</span> und Rückkehrer:innen, die Orientierung suchen.",
+    "coaching4": "<span class=\"important-word\">• Für Menschen im Job</span>, die Stabilität, Selbstsicherheit und Klarheit gewinnen möchten.",
+    "coaching5": "Unser Coaching ist keine Schablone – sondern ein Kompass, den wir gemeinsam entwickeln. Damit du wieder in deine Kraft kommst und deinen Weg mit Überzeugung gehst.",
+
+    "who": "Wem wir helfen",
+    "who1": "Unser Herz schlägt besonders für Menschen aus dem osteuropäischen Raum – aber bei uns sind <span class=\"important-word\">alle Nationen</span>, <span class=\"important-word\">alle Altersgruppen</span>, <span class=\"important-word\">alle Lebensgeschichten</span> willkommen. Vielfalt ist kein Schlagwort für uns, sondern gelebte Realität.",
+
+    "pot": "Wir glauben an Potenzial. Auch dort, wo andere es übersehen.",
+    "potWhat": "Was uns ausmacht",
+    "potWhat1": "• Echte Menschen statt automatisierter Abläufe.",
+    "potWhat2": "• Tiefe Gespräche statt oberflächlicher Beratung.",
+    "potWhat3": "• Lösungen mit Substanz statt schneller Versprechen.",
+    "potWhat4": "Mit unseren starken Netzwerken, unserem breiten Know-how und einem offenen Herzen schaffen wir nicht nur <span class=\"important-word\">Zugang zum Arbeitsmarkt</span>, sondern auch <span class=\"important-word\">Zugang zu neuen Lebenswegen.</span><br /> <span><br />Denn: Ein erfüllender Beruf verändert nicht nur den Kontostand – sondern das ganze Leben.</span>",
+
+    "suc": "Ihr Erfolg ist unser Ziel.",
+    "suc1": "Bei uns beginnt alles mit einem Gespräch.<br /><span class=\"important-word\">Komm vorbei. Ruf uns an. Schreib uns. </span>Und dann gehen wir den Weg gemeinsam."
   }
 }

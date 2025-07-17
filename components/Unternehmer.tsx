@@ -27,7 +27,7 @@ export default function Unternehmer() {
           {/* <div className="h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
         </div>
 
-        <div className="border-l text-2xl flex flex-col h-fit text-[rgba(110,110,115,1)] pb-5">
+        <div className="border-l text-2xl flex flex-col h-fit text-gray-500 pb-5">
           <div className="p-5 border-b">
             <TextAnimation>
               <p

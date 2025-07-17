@@ -9,8 +9,10 @@ export default function Welcome() {
   const tBtn = useTranslations("buttons");
 
   return (
-    <div>
-      <div className="border-b p-5 pt-10">
+
+
+    <>
+      <div className="border-b p-5 pt-10 ">
         <TextAnimation>
           <p
             className="text-[75px] leading-[80px] text-[rgba(44,67,102,1)]"
@@ -21,9 +23,9 @@ export default function Welcome() {
 
       <div className="grid grid-cols-2 text-2xl">
         <div className="p-5 flex justify-between flex-col h-full">
-          <div className="flex flex-col justify-between text-[rgba(110,110,115,1)] h-full">
+          <div className="flex flex-col justify-between h-full">
             <TextAnimation>
-              <p className="important-word underline underline-offset-10 decoration-2">
+              <p className="underline underline-offset-10 decoration-2 important-word">
                 {t("leftColumn.since", { count: t("leftColumn.count") })}
               </p>
             </TextAnimation>
@@ -31,7 +33,7 @@ export default function Welcome() {
           </div>
         </div>
 
-        <div className="p-5 pr-0 border-l flex flex-col gap-10 text-[rgba(110,110,115,1)]">
+        <div className="p-5 pr-0 border-l flex flex-col gap-10 text-gray-500">
           <TextAnimation>
             <p className="pr-5">
               {t.rich("rightColumn.paragraph", {
@@ -48,6 +50,6 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

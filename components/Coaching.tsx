@@ -28,7 +28,7 @@ export default function Coaching() {
               points.map((point: string, i: number) => (
                 <div key={i} className="border-b p-5">
                   <TextAnimation>
-                    <p>• {point}</p>
+                    <p className="important-word">• {point}</p>
                   </TextAnimation>
                 </div>
               ))}
@@ -36,7 +36,7 @@ export default function Coaching() {
           <div className="p-5 pr-0 flex gap-5 flex-col">
             <TextAnimation>
               <div
-                className="pr-5 mb-5 text-[rgba(110,110,115,1)]"
+                className="pr-5 mb-5 text-gray-500"
                 dangerouslySetInnerHTML={{ __html: t.raw("description") }}
               />
             </TextAnimation>

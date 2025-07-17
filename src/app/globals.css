@@ -32,7 +32,7 @@ body {
   background-color: rgba(255, 250, 240, 1);
 }
 .important-word {
-  font-weight: 500;
+  font-weight: 600;
   color: rgba(44, 67, 102, 1);
 }
 
@@ -128,27 +128,32 @@ body {
   overflow: hidden;
 }
 
-.btn-animation::after {
+.btn-animation:active {
+  transform: scale(0.98);
+  transition: transform 0.2s ease;
+}
+
+/* .btn-animation::after {
   content: "";
   position: absolute;
   inset: 0;
   width: 100%;
   background-color: gray;
-  transform: scaleX(0);
-  transform-origin: right;
+  transform: scaleY(0);
+  transform-origin: bottom;
   transition: transform 0.4s ease;
   z-index: 1;
 }
 
 .btn-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  transform: scaleY(1);
+  transform-origin: bottom;
 }
 
 .btn-animation > span {
   position: relative;
   z-index: 2;
-}
+} */
 
 .underline-animation {
   position: relative;

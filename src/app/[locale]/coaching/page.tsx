@@ -21,13 +21,13 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2">Coaching</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">Coaching</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className=" text-[rgba(110,110,115,1)]">
+                <p className=" text-gray-500">
                   <span className="important-word">Du suchst Arbeit – aber nicht irgendeinen Job.</span> Du suchst eine Aufgabe, die zu dir passt. Einen Platz, an dem du ankommen kannst. <span className="important-word">Wir helfen dir, diesen Platz zu finden.</span>
                   <br /> <span><br />
                     Vielleicht fühlst du dich gerade wie ein Schiff ohne Kompass – irgendwo zwischen Bewerbungsschreiben, Vorstellungsgesprächen und Formularen verloren. Keine Sorge: <span className="important-word">Wir kennen diese Gewässer.</span> Und wir wissen, wie man sicher durch den Sturm navigiert.
@@ -42,13 +42,13 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2">Was uns ausmacht</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">Was uns ausmacht</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-[rgba(110,110,115,1)]">
+                <p className="text-gray-500">
                   <span className="important-word">Wir hören zu. Wir stellen Fragen.</span> Und wir sehen mehr in dir als nur deinen Lebenslauf. Gemeinsam mit dir erstellen wir ein klares Profil, das zeigt, was du kannst – und wohin du willst.
                 </p>
               </TextAnimation>
@@ -60,12 +60,12 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2">Unsere Leistungen</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">Unsere Leistungen</p>
               </TextAnimation>
             </div>
 
 
-            <div className="border-l  text-[rgba(110,110,115,1)]">
+            <div className="border-l  text-gray-500">
               <div className="p-5">
                 <TextAnimation>
                   <p>
@@ -136,13 +136,13 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2">Unser Ziel</p>
+                <p className="underline underline-offset-10 decoration-2 important-word">Unser Ziel</p>
               </TextAnimation>
             </div>
 
             <div className="border-l p-5">
               <TextAnimation>
-                <p className="text-[rgba(110,110,115,1)]">
+                <p className="text-gray-500">
                   <span className="important-word">Nicht irgendein Job.</span> Sondern einer, der dich erfüllt. Einer, der zu dir passt wie ein Schlüssel ins Schloss.
                 </p>
               </TextAnimation>
@@ -160,7 +160,7 @@ export default function CoachingPage() {
             <div className="border-l">
               <div className="p-5">
                 <TextAnimation>
-                  <p className="text-[rgba(110,110,115,1)]">
+                  <p className="text-gray-500">
                     <span className="important-word">Wir glauben an dich.</span> Auch dann, wenn du selbst vielleicht gerade zweifelst. Komm vorbei. Lass uns reden. Und gemeinsam den nächsten Schritt machen – raus aus der Warteschleife, rein ins Arbeitsleben.
                   </p>
                 </TextAnimation>
