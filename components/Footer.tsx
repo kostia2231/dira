@@ -13,20 +13,20 @@ export default function Footer() {
 
   return (
     <>
-      <div className="border-t grid grid-cols-2 border-b">
+      <div className="border-t grid grid-cols-2 border-b max-[600px]:grid-cols-1">
         <div>
           <div className="flex justify-between text-[rgba(44,67,102,1)]">
             <div className="p-5">
               <TextAnimation>
-                <p className="text-[75px] leading-[80px]">{t("contacts")}</p>
+                <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("contacts")}</p>
               </TextAnimation>
             </div>
             {/* <div className="m-5 h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
           </div>
         </div>
-        <div className="text-2xl flex flex-col gap-5 text-gray-500 border-l">
+        <div className="text-2xl flex flex-col gap-5 text-gray-500 border-l max-[600px]:text-[16px] max-[600px]:leading-[24px]">
           <div>
-            <div className="p-5 border-b">
+            <div className="p-5 border-b max-[600px]:border-t">
               <TextAnimation>
                 <p>
                   <span className="important-word">{t("addressLabel")}</span>
@@ -94,20 +94,20 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)] font-semibold">
-        <div className="p-5 flex gap-5">
+      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)] font-semibold  max-[600px]:text-[10px]">
+        <div className="p-5 flex gap-5 max-[600px]:flex-col">
           <p className="underline-animation cursor-pointer">{t("nav.startpage")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.about")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.coaching")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.forEntrepreneurs")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.jobOffers")}</p>
         </div>
-        <div className="border-l p-5 flex justify-between">
-          <div className="flex gap-5">
+        <div className="border-l  flex justify-between max-[600px]:flex-col">
+          <div className="flex gap-5 max-[600px]:flex-col p-5">
             <p className="underline-animation cursor-pointer">{t("nav.mission")}</p>
             <p className="underline-animation cursor-pointer">{t("nav.imprintPrivacy")}</p>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center p-5 max-[600px]:border-t">
             <p className="ml-auto">© 2025</p>
           </div>
         </div>

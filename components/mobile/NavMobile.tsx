@@ -2,7 +2,8 @@
 import Link from "next/link";
 import Curve from "./Curve";
 import LanguageSwitcher from "../LanguageSwitcher";
-import ButtonMain from "../ButtonMain";
+// import ButtonMain from "../ButtonMain";
+import ButtonSecond from "../ButtonSecond";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
@@ -12,6 +13,8 @@ import { useTranslations } from "next-intl";
 
 export default function NavMobile({ onCloseAction }: { onCloseAction: () => void }) {
   const t = useTranslations("header");
+  const btn = useTranslations("buttons")
+
   const locales = ["de", "ru", "ua"];
   const path = usePathname();
   const parts = path?.split("/") || [];
@@ -125,7 +128,7 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
 
         </motion.div>
         <div className="w-full pt-10 h-fit">
-          <ButtonMain onClick={onClick} />
+          <ButtonSecond btnText={btn("titleBooking")} onClick={onClick} />
         </div>
       </div>
 

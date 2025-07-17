@@ -15,10 +15,10 @@ export default function Unternehmer() {
       <div className="border-t">
         <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
-      <div className="border-t grid grid-cols-2">
+      <div className="border-t grid grid-cols-2 max-[600px]:grid-cols-1">
         <div className="p-5 flex justify-between text-[rgba(44,67,102,1)]">
           <TextAnimation>
-            <p className="text-[75px] leading-[80px]">
+            <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">
               {t("titleLine1")}
               <br />
               {t("titleLine2")}
@@ -27,8 +27,8 @@ export default function Unternehmer() {
           {/* <div className="h-3.5 w-3.5 rounded-full bg-[rgb(14,41,94)]"></div> */}
         </div>
 
-        <div className="border-l text-2xl flex flex-col h-fit text-gray-500 pb-5">
-          <div className="p-5 border-b">
+        <div className="border-l text-2xl flex flex-col h-fit text-gray-500 pb-5 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
+          <div className="p-5 border-b max-[600px]:border-t">
             <TextAnimation>
               <p
                 dangerouslySetInnerHTML={{ __html: t.raw("description1") }}

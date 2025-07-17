@@ -1,10 +1,10 @@
 // "use client"
-import { Manrope } from "next/font/google";
 import "../globals.css";
 import Header from "../../../components/Header";
 import HeaderMobile from "../../../components/mobile/HeaderMobile";
-import { Providers } from "../providers";
 
+import { Manrope } from "next/font/google";
+import { Providers } from "../providers";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
