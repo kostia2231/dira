@@ -17,10 +17,10 @@ export default function UberUns() {
         <div className="grid">
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("why")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("why")}</p>
             </TextAnimation>
           </div>
-          <div className="grid grid-cols-2 text-2xl">
+          <div className="grid grid-cols-2 max-[600px]:grid-cols-1 text-2xl max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("about")}</p>
             </TextAnimation>
@@ -48,11 +48,11 @@ export default function UberUns() {
 
           <div className="p-5 border-t">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("how")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("how")}</p>
             </TextAnimation>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("what")}</p>
             </TextAnimation>
@@ -65,7 +65,7 @@ export default function UberUns() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("whatB")}</p>
             </TextAnimation>
@@ -84,7 +84,7 @@ export default function UberUns() {
 
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("coaching")}</p>
             </TextAnimation>
@@ -120,7 +120,7 @@ export default function UberUns() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("who")}</p>
             </TextAnimation>
@@ -135,11 +135,11 @@ export default function UberUns() {
 
           <div className="p-5 border-t">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("pot")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("pot")}</p>
             </TextAnimation>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <TextAnimation>
               <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("potWhat")}</p>
             </TextAnimation>
@@ -173,16 +173,16 @@ export default function UberUns() {
 
           <div className="p-5 border-t border-b">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("suc")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("suc")}</p>
             </TextAnimation>
           </div>
 
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-2  max-[600px]:grid-cols-1">
             <div></div>
             <div className="border-l p-5 grid pb-0">
 
               <TextAnimation>
-                <p className="text-2xl text-gray-500" dangerouslySetInnerHTML={{ __html: t.raw("suc1") }}></p>
+                <p className="text-2xl text-gray-500 max-[600px]:text-[16px] max-[600px]:leading-[24px]" dangerouslySetInnerHTML={{ __html: t.raw("suc1") }}></p>
               </TextAnimation>
               <div className="pt-10 pb-5">
                 <ButtonSecond btnText={`${btn("titleAdvise")}`} />

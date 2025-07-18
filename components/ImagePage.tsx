@@ -1,11 +1,11 @@
-type ImagePageProps = {
-  imageUrl: string
-}
+// type ImagePageProps = {
+//   imageUrl: string
+// }
 
-export default function ImagePage({ imageUrl }: ImagePageProps) {
-  return (
-    <>
-      <div></div>
-    </>
-  )
-}
+// export default function ImagePage({ imageUrl }: ImagePageProps) {
+//   return (
+//     <>
+//       <div></div>
+//     </>
+//   )
+// }

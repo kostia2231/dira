@@ -17,12 +17,12 @@ export default function Jobangebote() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("title")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("title")}</p>
             </TextAnimation>
           </div>
 
 
-          <div className="grid grid-cols-2 text-2xl">
+          <div className="grid grid-cols-2 text-2xl max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <div></div>
             <div className="border-l text-gray-500">
               <div className="p-5">

@@ -16,12 +16,12 @@ export default function CoachingPage() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[80px] leading-[80px]">{t("headline")}</p>
+              <p className="text-[80px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("headline")}</p>
             </TextAnimation>
           </div>
 
 
-          <div className="grid grid-cols-2 text-2xl">
+          <div className="grid grid-cols-2 text-2xl max-[600px]:text-[16px] max-[600px]:leading-[24px] max-[600px]:grid-cols-1">
 
             <div className="p-5">
               <TextAnimation>
@@ -42,7 +42,7 @@ export default function CoachingPage() {
 
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
 
             <div className="p-5">
               <TextAnimation>
@@ -59,7 +59,7 @@ export default function CoachingPage() {
 
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t">
+          <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
 
             <div className="p-5">
               <TextAnimation>
@@ -128,7 +128,7 @@ export default function CoachingPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl border-t border-b">
+          <div className="grid grid-cols-2 text-2xl border-t border-b max-[600px]:text-[16px] max-[600px]:leading-[24px] max-[600px]:grid-cols-1">
 
             <div className="p-5">
               <TextAnimation>
@@ -146,11 +146,11 @@ export default function CoachingPage() {
 
           <div className="border-b p-5">
             <TextAnimation>
-              <p className="text-[75px] leading-[80px]">{t("quote")}</p>
+              <p className="text-[75px] leading-[80px] max-[600px]:text-[28px] max-[600]:leading-[36px]">{t("quote")}</p>
             </TextAnimation>
           </div>
 
-          <div className="grid grid-cols-2 text-2xl ">
+          <div className="grid grid-cols-2 text-2xl max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
             <div></div>
             <div className="border-l">
               <div className="p-5">
