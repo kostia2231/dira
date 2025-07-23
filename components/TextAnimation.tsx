@@ -1,13 +1,17 @@
 "use client"
 
-import React, { useRef, useState } from "react"
+import React, { useRef, useState, ReactNode } from "react"
 import gsap from "gsap"
 import { SplitText } from "gsap/SplitText"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { useGSAP } from "@gsap/react"
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
-export default function TextAnimation({ children, animateOnScroll = true, delay = 0.2 }) {
+export default function TextAnimation({ children, animateOnScroll = true, delay = 0.2 }: {
+  children: ReactNode,
+  animateOnScroll?: boolean,
+  delay?: number
+}) {
   const containerRef = useRef(null)
   const elementRef = useRef([])
   const splitRef = useRef([])
