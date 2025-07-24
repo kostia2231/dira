@@ -14,7 +14,7 @@ export default function HeaderMobile() {
   return (
     <>
       <header
-        className="header min-[600px]:hidden p-5 border-b bg-dira-light-opacity backdrop-blur-xl">
+        className="header min-[600px]:hidden p-5 border-b bg-dira-light-opacity backdrop-blur-xl pt-10">
         <div className="header-content">
           <div className="logo w-fit">
             <Link href={"/"}>
