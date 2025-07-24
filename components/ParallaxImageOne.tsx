@@ -38,7 +38,7 @@ export default function ParallaxImageOne({ imageUrl, speed = -20 }: ParallaxImag
         />
       </div>
 
-      <div className="hidden">
+      <div className="hidden bg-fixed">
         <Image
           src={imageUrl}
           alt="preload"

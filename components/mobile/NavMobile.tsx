@@ -94,7 +94,11 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
 
 
           <motion.div variants={itemVariants}>
-            <Link href={withLocale("/uber-uns")} className={linkClass("/uber-uns")} onClick={onCloseAction}>
+            <Link href={withLocale("/uber-uns")} className={linkClass("/uber-uns")} onClick={() => {
+              setTimeout(() => {
+                onCloseAction()
+              }, 300)
+            }}>
               {t("about")}
             </Link>
           </motion.div>
