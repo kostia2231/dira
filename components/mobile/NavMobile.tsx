@@ -1,68 +1,71 @@
 "use client";
-import Link from "next/link";
+
 import Curve from "./Curve";
 import LanguageSwitcher from "../LanguageSwitcher";
-// import ButtonMain from "../ButtonMain";
 import ButtonSecond from "../ButtonSecond";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 import { menuSlide, scale, itemVariants, containerVariants } from "../../lib/animation";
 import { useTranslations } from "next-intl";
 
-
 export default function NavMobile({ onCloseAction }: { onCloseAction: () => void }) {
   const t = useTranslations("header");
-  const btn = useTranslations("buttons")
+  const btn = useTranslations("buttons");
 
   const locales = ["de", "ru", "ua"];
   const path = usePathname();
+  const router = useRouter();
+
   const parts = path?.split("/") || [];
   const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined;
 
-  const onClick = () => {
-    window.open("https://calendly.com/loxonnron/30min");
-  };
+  const [height, setHeight] = useState<number | null>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const withLocale = (href: string) => (locale ? `/${locale}${href}` : href);
 
   const linkClass = (href: string) =>
-    `${path?.startsWith(withLocale(href))
-      ? "text-gray-500 transition-all duration-400 important-word"
-      : "important-word"
-    }`;
+    `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 important-word" : "important-word"}`;
 
+  const handleNavigation = (href: string) => {
+    onCloseAction();
+    setTimeout(() => {
+      router.push(href);
+    }, 500);
+  };
 
-  const ref = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState<number | null>(null);
+  const openCalendly = () => {
+    window.open("https://calendly.com/loxonnron/30min");
+  };
 
   useEffect(() => {
-    function updateHeight() {
-      const slider = document.getElementById("menuSlider");
-      if (slider) {
-        setHeight(slider.offsetHeight);
-      }
-    }
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
+    const slider = document.getElementById("menuSlider");
+    if (slider) setHeight(slider.offsetHeight);
 
-    return () => window.removeEventListener("resize", updateHeight);
+    const resizeHandler = () => {
+      const slider = document.getElementById("menuSlider");
+      if (slider) setHeight(slider.offsetHeight);
+    };
+
+    window.addEventListener("resize", resizeHandler);
+    return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
   useEffect(() => {
-    const handleWheel = (e: Event) => {
+    const handleWheelOrClick = (e: Event) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
         e.preventDefault();
         onCloseAction();
       }
     };
 
-    document.addEventListener("wheel", handleWheel, { passive: false });
-    document.addEventListener("click", handleWheel);
+    document.addEventListener("wheel", handleWheelOrClick, { passive: false });
+    document.addEventListener("click", handleWheelOrClick);
 
     return () => {
-      document.removeEventListener("wheel", handleWheel);
-      document.removeEventListener("click", handleWheel);
+      document.removeEventListener("wheel", handleWheelOrClick);
+      document.removeEventListener("click", handleWheelOrClick);
     };
   }, [onCloseAction]);
 
@@ -92,47 +95,45 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
             <LanguageSwitcher />
           </motion.div>
 
-
           <motion.div variants={itemVariants}>
-            <Link href={withLocale("/uber-uns")} className={linkClass("/uber-uns")} onClick={() => {
-              setTimeout(() => {
-                onCloseAction()
-              }, 300)
-            }}>
+            <button onClick={() => handleNavigation(withLocale("/uber-uns"))} className={linkClass("/uber-uns")}>
               {t("about")}
-            </Link>
+            </button>
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <Link href={withLocale("/coaching")} className={linkClass("/coaching")} onClick={onCloseAction}>
+            <button onClick={() => handleNavigation(withLocale("/coaching"))} className={linkClass("/coaching")}>
               {t("coaching")}
-            </Link>
+            </button>
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <a onClick={() => {
-              onClick()
-              onCloseAction()
-            }} className="cursor-pointer important-word">
+            <button
+              onClick={() => {
+                openCalendly();
+                onCloseAction();
+              }}
+              className="cursor-pointer important-word"
+            >
               {t("business")}
-            </a>
+            </button>
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <Link href={withLocale("/jobangebote")} className={linkClass("/jobangebote")} onClick={onCloseAction}>
+            <button onClick={() => handleNavigation(withLocale("/jobangebote"))} className={linkClass("/jobangebote")}>
               {t("jobs")}
-            </Link>
+            </button>
           </motion.div>
 
           <motion.div variants={itemVariants}>
-            <Link href={withLocale("/kontakte")} className={linkClass("/kontakte")} onClick={onCloseAction}>
+            <button onClick={() => handleNavigation(withLocale("/kontakte"))} className={linkClass("/kontakte")}>
               {t("contacts")}
-            </Link>
+            </button>
           </motion.div>
-
         </motion.div>
+
         <div className="w-full pt-10 h-fit">
-          <ButtonSecond btnText={btn("titleBooking")} onClick={onClick} />
+          <ButtonSecond btnText={btn("titleBooking")} onClick={openCalendly} />
         </div>
       </div>
 

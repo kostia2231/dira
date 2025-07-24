@@ -28,7 +28,7 @@ export default function HeaderMobile() {
           </div>
         </div>
       </header>
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isActive && <NavMobile onCloseAction={() => setIsActive(!isActive)} />}
       </AnimatePresence>
     </>
