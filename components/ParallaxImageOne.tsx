@@ -25,7 +25,7 @@ export default function ParallaxImageOne({ imageUrl, speed = -20 }: ParallaxImag
   }, [loaded])
 
   return (
-    <div className="relative w-full h-[70vh] max-[600px]:h-[400px]  overflow-hidden">
+    <div className="relative w-full h-[70vh] max-[600px]:h-[400px] overflow-hidden">
       <div ref={bannerRef} className="w-full h-full opacity-0">
         <ParallaxBanner
           layers={[

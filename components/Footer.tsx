@@ -9,7 +9,6 @@ export default function Footer() {
   const t = useTranslations("footer");
 
   const path = usePathname()
-  const isMainPage = ["/", "/de", "/ru", "/ua"].includes(path);
   const isContactPage = ["/de/kontakte", "/ru/kontakte", "/ua/kontakte"].includes(path)
 
   const onClick = () => {
@@ -18,7 +17,7 @@ export default function Footer() {
 
   return (
     <>
-      <div id="footer" className={`${isContactPage ? "" : "border-t"} grid grid-cols-2 border-b max-[600px]:grid-cols-1 ${isMainPage ? "" : "max-[600px]:mt-[73px]"}`}>
+      <div id="footer" className={`${isContactPage ? "" : "border-t"} grid grid-cols-2 border-b max-[600px]:grid-cols-1 ${isContactPage ? "max-[600px]:mt-[73px]" : ""}`}>
         <div>
           <div className="flex justify-between text-[rgba(44,67,102,1)]">
             <div className="p-5">
