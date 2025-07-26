@@ -13,7 +13,7 @@ export default function UberUns() {
 
   return (
     <>
-      <section className="text-[rgba(44,67,102,1)]">
+      <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
         <div className="grid">
           <div className="border-b p-5">
             <TextAnimation>

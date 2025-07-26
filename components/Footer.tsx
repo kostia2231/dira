@@ -13,7 +13,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="border-t grid grid-cols-2 border-b max-[600px]:grid-cols-1">
+      <div className="border-t grid grid-cols-2 border-b max-[600px]:grid-cols-1 max-[600px]:mt-[72px]">
         <div>
           <div className="flex justify-between text-[rgba(44,67,102,1)]">
             <div className="p-5">

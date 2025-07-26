@@ -12,7 +12,7 @@ export default function Jobangebote() {
 
   return (
     <>
-      <section className="text-[rgba(44,67,102,1)]">
+      <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
         <div>
 
           <div className="border-b p-5">
