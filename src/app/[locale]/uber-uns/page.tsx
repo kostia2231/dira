@@ -21,9 +21,11 @@ export default function UberUns() {
             </TextAnimation>
           </div>
           <div className="grid grid-cols-2 max-[600px]:grid-cols-1 text-2xl max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("about")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("about")}</p>
+              </TextAnimation>
+            </div>
 
             <div className="border-l p-5">
               <TextAnimation>
@@ -53,9 +55,11 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("what")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("what")}</p>
+              </TextAnimation>
+            </div>
 
             <div className="border-l p-5">
               <TextAnimation>
@@ -66,9 +70,11 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("whatB")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("whatB")}</p>
+              </TextAnimation>
+            </div>
 
             <div className="border-l p-5">
               <TextAnimation>
@@ -85,9 +91,11 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("coaching")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("coaching")}</p>
+              </TextAnimation>
+            </div>
 
             <div className="border-l text-gray-500">
               <TextAnimation>
@@ -121,9 +129,11 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("who")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("who")}</p>
+              </TextAnimation>
+            </div>
             <div className="border-l text-gray-500">
               <TextAnimation>
                 <p className="p-5" dangerouslySetInnerHTML={{ __html: t.raw("who1") }}>
@@ -140,9 +150,11 @@ export default function UberUns() {
           </div>
 
           <div className="grid grid-cols-2 text-2xl border-t max-[600px]:grid-cols-1 max-[600px]:text-[16px] max-[600px]:leading-[24px]">
-            <TextAnimation>
-              <p className="p-5 underline underline-offset-10 decoration-2 important-word">{t("potWhat")}</p>
-            </TextAnimation>
+            <div className="p-5">
+              <TextAnimation>
+                <p className="relative w-fit lineunder important-word">{t("potWhat")}</p>
+              </TextAnimation>
+            </div>
 
             <div className="border-l text-gray-500">
               <TextAnimation>

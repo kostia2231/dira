@@ -28,7 +28,7 @@ export default function Welcome() {
         <div className="p-5 flex justify-between flex-col h-full max-[600px]:pb-0">
           <div className="flex flex-col justify-between h-full">
             <TextAnimation>
-              <p className="underline underline-offset-10 decoration-2 important-word max-[600px]:text-[16px] max-[600px]:leading-[24px]">
+              <p className="relative w-fit lineunder important-word max-[600px]:text-[16px] max-[600px]:leading-[24px]">
                 {t("leftColumn.since", { count: t("leftColumn.count") })}
               </p>
             </TextAnimation>

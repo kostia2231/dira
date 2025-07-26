@@ -166,6 +166,16 @@ body {
   z-index: 2;
 } */
 
+.lineunder::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background: rgba(44, 67, 102, 1);
+}
+
 @media (min-width: 768px) {
   .underline-animation {
     position: relative;

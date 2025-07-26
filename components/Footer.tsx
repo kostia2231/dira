@@ -98,7 +98,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 text-[12px] text-[rgba(10,33,61,1)] font-semibold  max-[600px]:text-[10px]">
+      <div className="grid grid-cols-2 text-[12px] text-[rgba(44,67,102,1)] font-semibold  max-[600px]:text-[10px]">
         <div className="p-5 flex gap-5 max-[600px]:flex-col">
           <p className="underline-animation cursor-pointer">{t("nav.startpage")}</p>
           <p className="underline-animation cursor-pointer">{t("nav.about")}</p>

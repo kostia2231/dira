@@ -25,7 +25,7 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">{t("section1Title")}</p>
+                <p className="relative w-fit lineunder important-word">{t("section1Title")}</p>
               </TextAnimation>
             </div>
 
@@ -46,7 +46,7 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">{t("section2Title")}</p>
+                <p className="relative w-fit lineunder important-word">{t("section2Title")}</p>
               </TextAnimation>
             </div>
 
@@ -63,7 +63,7 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">{t("section3Title")}</p>
+                <p className="relative w-fit lineunder important-word">{t("section3Title")}</p>
               </TextAnimation>
             </div>
 
@@ -132,7 +132,7 @@ export default function CoachingPage() {
 
             <div className="p-5">
               <TextAnimation>
-                <p className="underline underline-offset-10 decoration-2 important-word">{t("section4Title")}</p>
+                <p className="relative w-fit lineunder important-word">{t("section4Title")}</p>
               </TextAnimation>
             </div>
 

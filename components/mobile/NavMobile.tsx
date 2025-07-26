@@ -26,7 +26,7 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
   const withLocale = (href: string) => (locale ? `/${locale}${href}` : href);
 
   const linkClass = (href: string) =>
-    `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 important-word" : "important-word"}`;
+    `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 font-semibold" : "important-word"}`;
 
   const handleNavigation = (href: string) => {
     onCloseAction();
@@ -77,7 +77,7 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
       initial="initial"
       animate="enter"
       exit="exit"
-      className="w-full h-fit bg-dira-light top-[73px] z-50 fixed border-b text-[rgba(44,67,102,1)]"
+      className="w-full h-fit bg-dira-light top-[73px] z-50 fixed border-b"
     >
       <div className="p-5">
         <motion.div variants={scale} initial="closed" animate="open" exit="closed">
