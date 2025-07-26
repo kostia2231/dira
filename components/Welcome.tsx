@@ -21,7 +21,7 @@ export default function Welcome() {
       </div>
 
       <div className="min-[600px]:hidden border-b">
-        <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={-5} />
+        <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={0} />
       </div>
 
       <div className="grid grid-cols-2 text-2xl max-[600px]:grid-cols-1">

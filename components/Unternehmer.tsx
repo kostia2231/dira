@@ -16,7 +16,7 @@ export default function Unternehmer() {
         <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
       <div className="border-t min-[600px]:hidden">
-        <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-5} />
+        <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={0} />
       </div>
       <div className="border-t grid grid-cols-2 max-[600px]:grid-cols-1">
         <div className="p-5 flex justify-between text-[rgba(44,67,102,1)]">
