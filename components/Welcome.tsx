@@ -2,6 +2,7 @@
 
 import ButtonSecond from "./ButtonSecond";
 import TextAnimation from "./TextAnimation";
+import ParallaxImageOne from "./ParallaxImageOne";
 import { useTranslations } from "next-intl";
 
 export default function Welcome() {
@@ -17,6 +18,10 @@ export default function Welcome() {
             dangerouslySetInnerHTML={{ __html: t("headline") }}
           />
         </TextAnimation>
+      </div>
+
+      <div className="min-[600px]:hidden border-b">
+        <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={-5} />
       </div>
 
       <div className="grid grid-cols-2 text-2xl max-[600px]:grid-cols-1">

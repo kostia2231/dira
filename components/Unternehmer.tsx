@@ -15,6 +15,9 @@ export default function Unternehmer() {
       <div className="border-t max-[600px]:hidden">
         <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
+      <div className="border-t min-[600px]:hidden">
+        <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-5} />
+      </div>
       <div className="border-t grid grid-cols-2 max-[600px]:grid-cols-1">
         <div className="p-5 flex justify-between text-[rgba(44,67,102,1)]">
           <TextAnimation>
