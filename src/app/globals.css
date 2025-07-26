@@ -166,51 +166,53 @@ body {
   z-index: 2;
 } */
 
-.underline-animation {
-  position: relative;
-  display: inline-block;
-  /* padding-bottom: 5px; */
-  /* margin-bottom: 5px; */
-}
-.underline-animation::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  height: 2px;
-  width: 100%;
-  background: rgba(44, 67, 102, 1);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
-}
+@media (min-width: 768px) {
+  .underline-animation {
+    position: relative;
+    display: inline-block;
+    /* padding-bottom: 5px; */
+    /* margin-bottom: 5px; */
+  }
+  .underline-animation::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 100%;
+    background: rgba(44, 67, 102, 1);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+  }
 
-.underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
-.underline-animation-light {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-.underline-animation-light::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background: rgba(255, 250, 240, 1);
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.4s ease;
-}
+  .underline-animation-light {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .underline-animation-light::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: rgba(255, 250, 240, 1);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+  }
 
-.underline-animation-light:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
+  .underline-animation-light:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 .header {
