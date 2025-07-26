@@ -18,8 +18,8 @@ export default function ParallaxImageOne({ imageUrl, speed = -20 }: ParallaxImag
     if (loaded && bannerRef.current) {
       gsap.fromTo(
         bannerRef.current,
-        { autoAlpha: 0, scale: 1.02 },
-        { autoAlpha: 1, scale: 1, duration: 2, ease: 'power4.out' }
+        { autoAlpha: 0, scale: 1.05 },
+        { autoAlpha: 1, scale: 1, duration: 3, ease: 'power4.out' }
       )
     }
   }, [loaded])

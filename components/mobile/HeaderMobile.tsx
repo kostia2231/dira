@@ -1,15 +1,28 @@
 'use client'
-import { useState } from "react"
-import { AnimatePresence } from "motion/react"
 
+import { useState } from "react"
+import { useRouter, usePathname } from "next/navigation"
+import { AnimatePresence } from "motion/react"
 import Logo from "../icons/LogoDira"
 import NavMobile from "./NavMobile"
-import Link from "next/link"
-
 
 export default function HeaderMobile() {
   const [isActive, setIsActive] = useState<boolean>(false)
 
+  const router = useRouter()
+  const path = usePathname()
+
+  const getLocale = () => {
+    const segments = path.split('/');
+    const first = segments[1];
+    if (["de", "ru", "ua"].includes(first)) return first;
+    return "de";
+  };
+
+  const handleGoHome = () => {
+    const locale = getLocale();
+    router.push(`/${locale}`);
+  };
 
   return (
     <>
@@ -17,9 +30,9 @@ export default function HeaderMobile() {
         className="header min-[600px]:hidden p-5 border-b bg-dira-light-opacity backdrop-blur-xl pt-10">
         <div className="header-content">
           <div className="logo w-fit">
-            <Link href={"/"}>
+            <div onClick={handleGoHome}>
               <Logo className="h-8" />
-            </Link >
+            </div >
           </div>
 
 
