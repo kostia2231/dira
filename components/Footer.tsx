@@ -3,9 +3,13 @@
 import ButtonSecond from "./ButtonSecond";
 import TextAnimation from "./TextAnimation";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const t = useTranslations("footer");
+
+  const path = usePathname()
+  const isMainPage = ["/", "/de", "/ru", "/ua"].includes(path);
 
   const onClick = () => {
     window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7");
@@ -13,7 +17,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="border-t grid grid-cols-2 border-b max-[600px]:grid-cols-1 max-[600px]:mt-[72px]">
+      <div id="footer" className={`border-t grid grid-cols-2 border-b max-[600px]:grid-cols-1 ${isMainPage ? "" : "max-[600px]:mt-[72px]"}`}>
         <div>
           <div className="flex justify-between text-[rgba(44,67,102,1)]">
             <div className="p-5">
