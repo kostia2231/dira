@@ -42,7 +42,7 @@ export default function Curve({ height }: CurveProps) {
         initial="initial"
         animate="enter"
         exit="exit"
-        fill="white"
+        fill="#FFFAF0"
       ></motion.path>
     </svg>
   )

@@ -19,7 +19,7 @@ export default function Welcome() {
           />
         </TextAnimation>
 
-        <div className="pt-5">
+        <div className="pt-10 max-[600px]:hidden">
           <ButtonSecond btnText="Termin Buchen" />
         </div>
       </div>
