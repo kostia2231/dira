@@ -12,6 +12,7 @@ export default function Coaching() {
   return (
     <>
       <div className="border-t max-[600px]:hidden">
+        sd
         <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={-10} />
       </div>
       <div className="border-t grid grid-cols-2 max-[600px]:grid-cols-1">

@@ -32,7 +32,7 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
     onCloseAction();
     setTimeout(() => {
       router.push(href);
-    }, 400);
+    }, 100);
   };
 
   const openCalendly = () => {

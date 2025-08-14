@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, ReactNode } from "react";
+import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -90,7 +90,7 @@ export default function TextAnimation({
               ...animationProps,
               scrollTrigger: {
                 trigger: containerRef.current,
-                start: "top 85%",
+                start: "top 90%",
                 once: true,
               },
             });

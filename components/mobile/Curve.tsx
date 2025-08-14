@@ -30,8 +30,19 @@ export default function Curve({ height }: CurveProps) {
   }
 
   return (
-    <svg className={"svgCurve"}>
-      <motion.path variants={curve} initial="initial" animate="enter" exit="exit" filter="url(#blurFilter)"
+    <svg
+      className={"svgCurve"}
+      viewBox="0 0 200 400"
+      width="200"
+      height={height}
+      preserveAspectRatio="none"
+    >
+      <motion.path
+        variants={curve}
+        initial="initial"
+        animate="enter"
+        exit="exit"
+        fill="white"
       ></motion.path>
     </svg>
   )

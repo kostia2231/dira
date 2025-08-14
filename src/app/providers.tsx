@@ -1,7 +1,7 @@
 'use client';
 
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { ReactLenis } from 'lenis/react'
+// import { ReactLenis } from 'lenis/react'
 
 
 export function Providers({ children }: { children: React.ReactNode }) {
@@ -10,7 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   // })
   // console.log(lenis)
   return <>
-    <ReactLenis root />
+    {/*<ReactLenis root />*/}
     <ParallaxProvider scrollAxis="vertical">
       {children}
     </ParallaxProvider>
