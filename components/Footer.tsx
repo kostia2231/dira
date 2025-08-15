@@ -112,7 +112,7 @@ export default function Footer() {
             <p className="underline-animation cursor-pointer">{t("nav.imprintPrivacy")}</p>
           </div>
           <div className="flex justify-center items-center p-5 max-[600px]:border-t">
-            <p className="ml-auto">© 2025</p>
+            <p className="mr-auto">© 2025</p>
           </div>
         </div>
       </div>

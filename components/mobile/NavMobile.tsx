@@ -28,11 +28,13 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
   const linkClass = (href: string) =>
     `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 font-semibold" : "important-word"}`;
 
-  const handleNavigation = (href: string) => {
-    onCloseAction();
-    setTimeout(() => {
-      router.push(href);
-    }, 100);
+  const handleNavigation = async (href: string) => {
+    await new Promise<void>((resolve) => {
+      onCloseAction();
+      setTimeout(resolve, 50);
+    });
+
+    router.push(href);
   };
 
   const openCalendly = () => {
@@ -71,6 +73,7 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
 
   return (
     <motion.div
+
       id="menuSlider"
       ref={ref}
       variants={menuSlide}
@@ -139,5 +142,6 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
 
       <Curve height={height} />
     </motion.div>
+
   );
 }
