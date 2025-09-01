@@ -26,7 +26,9 @@
     "react-i18next": "^15.6.0",
     "react-parallax": "^3.5.2",
     "react-scroll-parallax": "^3.4.5",
-    "simple-parallax-js": "^6.2.1"
+    "simple-parallax-js": "^6.2.1",
+    "three": "^0.179.1",
+    "wave-gradient": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

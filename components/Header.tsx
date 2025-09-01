@@ -27,6 +27,7 @@ export default function Header() {
     }`;
 
   return (
+
     <header
       id="site-header"
       className="max-[600px]:hidden font-semibold z-50 p-5 flex justify-between items-center sticky top-0 w-full bg-dira-light-opacity backdrop-blur-xl border-b"

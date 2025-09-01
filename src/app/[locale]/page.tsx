@@ -1,16 +1,17 @@
 import Welcome from "../../../components/Welcome"
 import Coaching from "../../../components/Coaching"
 import Unternehmer from "../../../components/Unternehmer"
-// import Address from "./components/Address"
+import Gradient from "../../../three/Gradient"
 
 export default function Home() {
   return <>
-    <section>
-      <Welcome />
-      <Coaching />
-      <Unternehmer />
-      {/* <PartnersLogo /> */}
-      {/* <Address /> */}
+    <section className="relative">
+      <Gradient />
+      <div>
+        <Welcome />
+        <Coaching />
+        <Unternehmer />
+      </div>
     </section>
   </>
 }

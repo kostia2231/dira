@@ -2,13 +2,11 @@
 import "../globals.css";
 import Header from "../../../components/Header";
 import HeaderMobile from "../../../components/mobile/HeaderMobile";
-
-import { Manrope } from "next/font/google";
 import { Providers } from "../providers";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { Manrope } from "next/font/google";
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-
 
 const manrope = Manrope({
   variable: "--font-manrope-sans",
@@ -33,7 +31,6 @@ export default async function RootLayout({
       <body className={`${manrope.variable} antialiased`} id="__next">
         <NextIntlClientProvider>
           <Providers>
-
             <HeaderMobile />
             <Header />
             {children}
