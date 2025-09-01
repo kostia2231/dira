@@ -1,6 +1,7 @@
 'use client'
 
 import ButtonSecond from "../../../../components/ButtonSecond"
+import Card from "../../../../components/Card"
 import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
 import { useTranslations } from "next-intl"
@@ -13,6 +14,16 @@ export default function Jobangebote() {
   return (
     <>
       <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
+
+        <div className="flex justify-center items-center">
+          <div className="grid-cols-3 grid p-10 border-b gap-5 max-[600px]:grid-cols-1">
+            <Card>Bäckereiverkäufer/in</Card >
+            <Card />
+            <Card />
+          </div>
+        </div>
+
+
         <div>
 
           <div className="border-b p-5">
