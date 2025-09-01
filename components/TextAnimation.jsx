@@ -90,7 +90,7 @@ export default function TextAnimation({
               ...animationProps,
               scrollTrigger: {
                 trigger: containerRef.current,
-                start: "top 90%",
+                start: "top 95%",
                 once: true,
               },
             });

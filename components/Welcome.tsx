@@ -20,7 +20,7 @@ export default function Welcome() {
             />
           </TextAnimation>
 
-          <div className="pt-10 min-[600px]:hidden">
+          <div className="pt-5 min-[600px]:hidden">
             <ButtonSecond btnText={tBtn("titleBooking")} />
           </div>
         </div>

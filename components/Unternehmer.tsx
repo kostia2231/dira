@@ -12,7 +12,7 @@ export default function Unternehmer() {
 
   return (
     <>
-      <div className="border-t max-[600px]:hidden">
+      <div className="border-t max-[600px]:hidden rounded">
         <ParallaxImageOne imageUrl="/images/22_sm.webp" speed={-10} />
       </div>
       <div className="border-t min-[600px]:hidden">
