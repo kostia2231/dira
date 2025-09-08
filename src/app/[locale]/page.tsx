@@ -10,11 +10,13 @@ export default function Home() {
   return <>
     <Revealer />
     <GradientMain />
-    <div className="relative px-2.5 pb-2.5  hidden max-[600px]:block h-screen">
+    {/* сделать мобильный элемент */}
+    <div className="relative px-2.5 pb-2.5 hidden max-[600px]:block h-[100svh]">
       <div className="pt-[85px] h-full">
         <GradientMobile />
       </div>
     </div>
+    {/**/}
     <section>
       <HeaderSecond />
       <Welcome />
