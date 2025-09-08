@@ -21,8 +21,13 @@ export default function Home() {
           </div>
         </div>
         {/*<div className="p-2.5 pt-5 opacity-50">KOSTENLOSE ERSTBERATUNG</div>*/}
-        <div className="absolute bottom-[5px] w-full text-center">
-          <div className="py-5 opacity-50">Weiter scrollen</div>
+        <div className="absolute bottom-0 p-2.5 w-full text-center  text-black flex flex-col gap-2.5">
+          <div className="py-5  bg-white rounded-[15px]">
+            <div className="text-center px-2.5">Termin Buchen</div>
+          </div>
+          <div className="py-5  bg-white rounded-[15px]">
+            <div className="text-center px-2.5">Weiter</div>
+          </div>
         </div>
       </div>
     </div>
