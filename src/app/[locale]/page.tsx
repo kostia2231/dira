@@ -17,19 +17,13 @@ export default function Home() {
         <GradientMobile />
         <div className="absolute top-[85px]">
           <div className="px-2.5 pt-5 text-[28px] leading-[36px]">
-            Willkommen <br />
-            bei Ihrer
-            Arbeitsvermittlung
-            mit Herz und Verstand
+            Ihr Weg <br />
+            zur neuen Anstellung
           </div>
         </div>
         {/*<div className="p-2.5 pt-5 opacity-50">KOSTENLOSE ERSTBERATUNG</div>*/}
         <div className="absolute bottom-[5px] w-full text-center">
-
-          <div className="p-2.5 min-[600px]:hidden">
-            <ButtonSecond btnText={"JETZT BUCHEN"} />
-          </div>
-          <div className="px-2.5 py-5 font-semibold opacity-50 text-left text-[10px]">© D.I.R.A. gegr. 2005</div>
+          <div className="py-5 opacity-50">Weiter scrollen</div>
         </div>
       </div>
     </div>
