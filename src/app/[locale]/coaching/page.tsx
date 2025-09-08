@@ -1,5 +1,3 @@
-'use client'
-
 import ButtonSecond from "../../../../components/ButtonSecond"
 import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
@@ -175,4 +173,8 @@ export default function CoachingPage() {
       </div>
     </>
   )
+}
+
+export async function generateStaticParams() {
+  return [{ locale: 'de' }, { locale: 'ru' }, { locale: 'ua' }];
 }

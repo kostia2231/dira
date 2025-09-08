@@ -1,19 +1,19 @@
-"use client";
+"use client"
 
-import ButtonSecond from "./ButtonSecond";
-import TextAnimation from "./TextAnimation";
-import { useTranslations } from "next-intl";
-import { usePathname } from "next/navigation";
+import ButtonSecond from "./ButtonSecond"
+import TextAnimation from "./TextAnimation"
+import { useTranslations } from "next-intl"
+import { usePathname } from "next/navigation"
 
 export default function Footer() {
-  const t = useTranslations("footer");
+  const t = useTranslations("footer")
 
   const path = usePathname()
   const isContactPage = ["/de/kontakte", "/ru/kontakte", "/ua/kontakte"].includes(path)
 
   const onClick = () => {
-    window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7");
-  };
+    window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7")
+  }
 
   return (
     <>
@@ -117,5 +117,5 @@ export default function Footer() {
         </div>
       </div>
     </>
-  );
+  )
 }

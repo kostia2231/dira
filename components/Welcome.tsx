@@ -1,13 +1,13 @@
-'use client';
+'use client'
 
-import ButtonSecond from "./ButtonSecond";
-import TextAnimation from "./TextAnimation";
-import ParallaxImageOne from "./ParallaxImageOne";
-import { useTranslations } from "next-intl";
+import ButtonSecond from "./ButtonSecond"
+import TextAnimation from "./TextAnimation"
+import ParallaxImageOne from "./ParallaxImageOne"
+import { useTranslations } from "next-intl"
 
 export default function Welcome() {
-  const t = useTranslations("welcome");
-  const tBtn = useTranslations("buttons");
+  const t = useTranslations("welcome")
+  const tBtn = useTranslations("buttons")
 
   return (
     <>
@@ -61,5 +61,5 @@ export default function Welcome() {
         </div>
       </div >
     </>
-  );
+  )
 }

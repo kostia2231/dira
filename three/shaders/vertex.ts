@@ -25,8 +25,8 @@ export const vertexShader = `
 
   void main() {
     vUv = uv;
-    float n1 = noise(uv * 3.0 + time * 0.1);
-    float n2 = noise(uv * 4.0 - time * 0.2);
+    float n1 = noise(uv * 2.0 + time * 0.1);
+    float n2 = noise(uv * 2.0 - time * 0.2);
     float n = n1 * 0.9 + n2 * 1.0;
 
     vNoise = n;

@@ -1,18 +1,18 @@
 import React from 'react'
-import { motion, Variants } from 'framer-motion';
+import { motion, Variants } from 'framer-motion'
 
 type CurveProps = {
-  height: number | null;
-};
+  height: number | null
+}
 
 export default function Curve({ height }: CurveProps) {
-  if (height === null) return null;
+  if (height === null) return null
 
-  const controlX = 50;
-  const controlY = height / 3;
+  const controlX = 50
+  const controlY = height / 3
 
-  const initialPath = `M100 0 L200 0 L200 ${height} L100 ${height} Q${-controlX} ${controlY} 100 0`;
-  const targetPath = `M100 0 L200 0 L200 ${height} L100 ${height} Q${controlX} ${controlY} 100 0`;
+  const initialPath = `M100 0 L200 0 L200 ${height} L100 ${height} Q${-controlX} ${controlY} 100 0`
+  const targetPath = `M100 0 L200 0 L200 ${height} L100 ${height} Q${controlX} ${controlY} 100 0`
 
 
   const curve: Variants = {

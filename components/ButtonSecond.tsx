@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC } from "react"
 import ArrowUp from "./icons/ArrowUp"
 
 type ButtonSecondProps = {
-  btnText: string;
+  btnText: string
   onClick?: () => void
 }
 
@@ -12,7 +12,7 @@ const ButtonSecond: FC<ButtonSecondProps> = ({ btnText, onClick }) => {
       {btnText}
       <ArrowUp />
     </span>
-  </button>;
-};
+  </button>
+}
 
-export default ButtonSecond;
+export default ButtonSecond

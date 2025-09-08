@@ -1,13 +1,13 @@
-"use client";
+"use client"
 
-import ButtonSecond from "./ButtonSecond";
-import ParallaxImageOne from "./ParallaxImageOne";
-import TextAnimation from "./TextAnimation";
-import { useTranslations } from "next-intl";
+import ButtonSecond from "./ButtonSecond"
+import ParallaxImageOne from "./ParallaxImageOne"
+import TextAnimation from "./TextAnimation"
+import { useTranslations } from "next-intl"
 
 export default function Coaching() {
-  const t = useTranslations("coaching");
-  const points = t.raw("points");
+  const t = useTranslations("coaching")
+  const points = t.raw("points")
 
   return (
     <>
@@ -48,5 +48,5 @@ export default function Coaching() {
         </div>
       </div>
     </>
-  );
+  )
 }

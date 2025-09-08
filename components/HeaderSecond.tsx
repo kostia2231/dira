@@ -1,35 +1,35 @@
-"use client";
+"use client"
 
-import { useEffect, useRef } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
-import Logo from "./icons/LogoDiraDark";
-import ButtonMain from "./ButtonMain";
-import LanguageSwitcher from "./LanguageSwitcher";
-import gsap from "gsap";
+import { useEffect, useRef } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { useTranslations } from "next-intl"
+import Logo from "./icons/LogoDiraDark"
+import ButtonMain from "./ButtonMain"
+import LanguageSwitcher from "./LanguageSwitcher"
+import gsap from "gsap"
 
-export default function Header() {
-  const t = useTranslations("header");
-  const locales = ["de", "ru", "ua"];
-  const path = usePathname();
-  const parts = path?.split("/") || [];
-  const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined;
+export default function HeaderSecond() {
+  const t = useTranslations("header")
+  const locales = ["de", "ru", "ua"]
+  const path = usePathname()
+  const parts = path?.split("/") || []
+  const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined
 
   const onClick = () => {
-    window.open("https://calendly.com/loxonnron/30min");
-  };
+    window.open("https://calendly.com/loxonnron/30min")
+  }
 
-  const withLocale = (href: string) => (locale ? `/${locale}${href}` : href);
+  const withLocale = (href: string) => (locale ? `/${locale}${href}` : href)
 
   const linkClass = (href: string) =>
-    `underline-animation ${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400" : ""}`;
+    `underline-animation ${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400" : ""}`
 
-  const headerRef = useRef<HTMLElement>(null);
-  const topMarkerRef = useRef<HTMLDivElement>(null);
+  const headerRef = useRef<HTMLElement>(null)
+  const topMarkerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!topMarkerRef.current || !headerRef.current) return;
+    if (!topMarkerRef.current || !headerRef.current) return
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -38,18 +38,18 @@ export default function Header() {
           duration: 0.4,
           ease: "power4.out",
           pointerEvents: entry.isIntersecting ? "none" : "auto",
-        });
+        })
       },
       {
         threshold: 0,
         rootMargin: "-100px 0px 0px 0px",
       },
-    );
+    )
 
-    observer.observe(topMarkerRef.current);
+    observer.observe(topMarkerRef.current)
 
-    return () => observer.disconnect();
-  }, []);
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <>
@@ -96,5 +96,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }

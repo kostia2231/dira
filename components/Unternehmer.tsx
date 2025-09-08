@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import ButtonSecond from "./ButtonSecond";
-import ParallaxImageOne from "./ParallaxImageOne";
-import TextAnimation from "./TextAnimation";
-import PartnersLogo from "./PartnersLogo";
-import Footer from "./Footer";
-import { useTranslations } from "next-intl";
+import ButtonSecond from "./ButtonSecond"
+import ParallaxImageOne from "./ParallaxImageOne"
+import TextAnimation from "./TextAnimation"
+import PartnersLogo from "./PartnersLogo"
+import Footer from "./Footer"
+import { useTranslations } from "next-intl"
 
 export default function Unternehmer() {
-  const t = useTranslations("unternehmer");
+  const t = useTranslations("unternehmer")
 
   return (
     <>
@@ -55,5 +55,5 @@ export default function Unternehmer() {
       </div>
       <Footer />
     </>
-  );
+  )
 }

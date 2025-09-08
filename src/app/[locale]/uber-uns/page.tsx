@@ -1,5 +1,5 @@
 // исправить тут дивы в параграфах
-'use client'
+// 'use client'
 
 import TextAnimation from "../../../../components/TextAnimation"
 import ButtonSecond from "../../../../components/ButtonSecond"
@@ -214,4 +214,8 @@ export default function UberUns() {
       <Footer />
     </>
   )
+}
+
+export async function generateStaticParams() {
+  return [{ locale: 'de' }, { locale: 'ru' }, { locale: 'ua' }];
 }

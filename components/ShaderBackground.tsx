@@ -1,15 +1,15 @@
-"use client";
+"use client"
 
-import ButtonSecond from "./ButtonSecond";
-import TextAnimation from "./TextAnimation";
-import { useTranslations } from "next-intl";
+import ButtonSecond from "./ButtonSecond"
+import TextAnimation from "./TextAnimation"
+import { useTranslations } from "next-intl"
 
 export default function Footer() {
-  const t = useTranslations("footer");
+  const t = useTranslations("footer")
 
   const onClick = () => {
-    window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7");
-  };
+    window.open("https://maps.app.goo.gl/H1SEHTy8N4ME7sVX7")
+  }
 
   return (
     <>
@@ -113,5 +113,5 @@ export default function Footer() {
         </div>
       </div>
     </>
-  );
+  )
 }

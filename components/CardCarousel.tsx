@@ -1,31 +1,31 @@
 'use client'
 
 import Card from "./Card"
-import { useRef, useState } from "react";
+import { useRef, useState } from "react"
 
 export default function CardCarousel() {
-  const carouselRef = useRef<HTMLDivElement | null>(null);
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
+  const carouselRef = useRef<HTMLDivElement | null>(null)
+  const [isDragging, setIsDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+  const [scrollLeft, setScrollLeft] = useState(0)
 
   const onMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!carouselRef.current) return;
-    setIsDragging(true);
-    setStartX(e.pageX - carouselRef.current.offsetLeft);
-    setScrollLeft(carouselRef.current.scrollLeft);
-  };
+    if (!carouselRef.current) return
+    setIsDragging(true)
+    setStartX(e.pageX - carouselRef.current.offsetLeft)
+    setScrollLeft(carouselRef.current.scrollLeft)
+  }
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isDragging || !carouselRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - carouselRef.current.offsetLeft;
-    const walk = (x - startX);
-    carouselRef.current.scrollLeft = scrollLeft - walk;
-  };
+    if (!isDragging || !carouselRef.current) return
+    e.preventDefault()
+    const x = e.pageX - carouselRef.current.offsetLeft
+    const walk = (x - startX)
+    carouselRef.current.scrollLeft = scrollLeft - walk
+  }
 
-  const onMouseLeave = () => setIsDragging(false);
-  const onMouseUp = () => setIsDragging(false);
+  const onMouseLeave = () => setIsDragging(false)
+  const onMouseUp = () => setIsDragging(false)
 
   const jobs = [
     { id: 1, title: "IT & Webdesign", description: "ab ca. pro Stunde", price: "18" },
@@ -36,11 +36,11 @@ export default function CardCarousel() {
     { id: 6, title: "Lager & Logistik", description: "ab ca. pro Stunde", price: "14" },
     { id: 7, title: "Pflege & Gesundheit", description: "ab ca. pro Stunde", price: "16" },
     { id: 8, title: "Gastronomie & Küche", description: "ab ca. pro Stunde", price: "14" },
-  ] as const;
+  ] as const
 
   const sortedJobs = [...jobs].sort(
     (b, a) => parseInt(b.price) - parseInt(a.price)
-  );
+  )
   return (
     <>
       <div

@@ -1,24 +1,24 @@
-'use client';
+'use client'
 
-import { useState, useRef, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { useState, useRef, useEffect } from "react"
+import { usePathname, useRouter } from "next/navigation"
 
-const locales = ["de", "ru", "ua"];
+const locales = ["de", "ru", "ua"]
 
 export default function LanguageSwitcher() {
-  const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
-  const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
   const ref = useRef<HTMLDivElement>(null)
 
-  const parts = pathname?.split("/") || [];
-  const currentLocale = locales.includes(parts[1]) ? parts[1] : "de";
-  const restOfPath = parts.slice(2).join("/");
+  const parts = pathname?.split("/") || []
+  const currentLocale = locales.includes(parts[1]) ? parts[1] : "de"
+  const restOfPath = parts.slice(2).join("/")
 
   const switchLanguage = (newLocale: string) => {
-    setIsOpen(false);
-    router.push(`/${newLocale}/${restOfPath}`);
-  };
+    setIsOpen(false)
+    router.push(`/${newLocale}/${restOfPath}`)
+  }
 
 
   useEffect(() => {
@@ -27,9 +27,9 @@ export default function LanguageSwitcher() {
         ref.current &&
         !ref.current.contains(event.target as Node)
       ) {
-        setIsOpen(false);
+        setIsOpen(false)
       }
-    };
+    }
 
     const handleWheel = (event: WheelEvent) => {
       if (
@@ -41,12 +41,12 @@ export default function LanguageSwitcher() {
     }
 
 
-    document.addEventListener("wheel", handleWheel);
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("wheel", handleWheel)
+    document.addEventListener("mousedown", handleClickOutside)
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
       document.removeEventListener("wheel", handleWheel)
-    };
+    }
   }, [])
 
   return (
@@ -75,5 +75,5 @@ export default function LanguageSwitcher() {
         </ul>
       )}
     </div>
-  );
+  )
 }

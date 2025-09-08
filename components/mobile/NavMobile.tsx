@@ -1,75 +1,75 @@
-"use client";
+"use client"
 
-import Curve from "./Curve";
-import LanguageSwitcher from "../LanguageSwitcher";
-import ButtonSecond from "../ButtonSecond";
-import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
-import { motion } from "motion/react";
-import { menuSlide, scale, itemVariants, containerVariants } from "../../lib/animation";
-import { useTranslations } from "next-intl";
+import Curve from "./Curve"
+import LanguageSwitcher from "../LanguageSwitcher"
+import ButtonSecond from "../ButtonSecond"
+import { usePathname, useRouter } from "next/navigation"
+import { useEffect, useRef, useState } from "react"
+import { motion } from "motion/react"
+import { menuSlide, scale, itemVariants, containerVariants } from "../../lib/animation"
+import { useTranslations } from "next-intl"
 
 export default function NavMobile({ onCloseAction }: { onCloseAction: () => void }) {
-  const t = useTranslations("header");
-  const btn = useTranslations("buttons");
+  const t = useTranslations("header")
+  const btn = useTranslations("buttons")
 
-  const locales = ["de", "ru", "ua"];
-  const path = usePathname();
-  const router = useRouter();
+  const locales = ["de", "ru", "ua"]
+  const path = usePathname()
+  const router = useRouter()
 
-  const parts = path?.split("/") || [];
-  const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined;
+  const parts = path?.split("/") || []
+  const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined
 
-  const [height, setHeight] = useState<number | null>(null);
-  const ref = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState<number | null>(null)
+  const ref = useRef<HTMLDivElement>(null)
 
-  const withLocale = (href: string) => (locale ? `/${locale}${href}` : href);
+  const withLocale = (href: string) => (locale ? `/${locale}${href}` : href)
 
   const linkClass = (href: string) =>
-    `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 font-semibold" : "important-word"}`;
+    `${path?.startsWith(withLocale(href)) ? "text-gray-500 transition-all duration-400 font-semibold" : "important-word"}`
 
   const handleNavigation = async (href: string) => {
     await new Promise<void>((resolve) => {
-      onCloseAction();
-      setTimeout(resolve, 50);
-    });
+      onCloseAction()
+      setTimeout(resolve, 50)
+    })
 
-    router.push(href);
-  };
+    router.push(href)
+  }
 
   const openCalendly = () => {
-    window.open("https://calendly.com/loxonnron/30min");
-  };
+    window.open("https://calendly.com/loxonnron/30min")
+  }
 
   useEffect(() => {
-    const slider = document.getElementById("menuSlider");
-    if (slider) setHeight(slider.offsetHeight);
+    const slider = document.getElementById("menuSlider")
+    if (slider) setHeight(slider.offsetHeight)
 
     const resizeHandler = () => {
-      const slider = document.getElementById("menuSlider");
-      if (slider) setHeight(slider.offsetHeight);
-    };
+      const slider = document.getElementById("menuSlider")
+      if (slider) setHeight(slider.offsetHeight)
+    }
 
-    window.addEventListener("resize", resizeHandler);
-    return () => window.removeEventListener("resize", resizeHandler);
-  }, []);
+    window.addEventListener("resize", resizeHandler)
+    return () => window.removeEventListener("resize", resizeHandler)
+  }, [])
 
   useEffect(() => {
     const handleWheelOrClick = (e: Event) => {
       if (ref.current && !ref.current.contains(e.target as Node)) {
-        e.preventDefault();
-        onCloseAction();
+        e.preventDefault()
+        onCloseAction()
       }
-    };
+    }
 
-    document.addEventListener("wheel", handleWheelOrClick, { passive: false });
-    document.addEventListener("click", handleWheelOrClick);
+    document.addEventListener("wheel", handleWheelOrClick, { passive: false })
+    document.addEventListener("click", handleWheelOrClick)
 
     return () => {
-      document.removeEventListener("wheel", handleWheelOrClick);
-      document.removeEventListener("click", handleWheelOrClick);
-    };
-  }, [onCloseAction]);
+      document.removeEventListener("wheel", handleWheelOrClick)
+      document.removeEventListener("click", handleWheelOrClick)
+    }
+  }, [onCloseAction])
 
   return (
     <motion.div
@@ -113,8 +113,8 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
           <motion.div variants={itemVariants}>
             <button
               onClick={() => {
-                openCalendly();
-                onCloseAction();
+                openCalendly()
+                onCloseAction()
               }}
               className="cursor-pointer important-word"
             >
@@ -143,5 +143,5 @@ export default function NavMobile({ onCloseAction }: { onCloseAction: () => void
       <Curve height={height} />
     </motion.div>
 
-  );
+  )
 }

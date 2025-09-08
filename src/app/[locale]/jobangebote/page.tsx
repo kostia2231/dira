@@ -65,3 +65,7 @@ export default function Jobangebote() {
     </>
   )
 }
+
+export async function generateStaticParams() {
+  return [{ locale: 'de' }, { locale: 'ru' }, { locale: 'ua' }];
+}
