@@ -5,7 +5,6 @@ import GradientMain from "../../../three/GradientMain"
 import HeaderSecond from "../../../components/HeaderSecond"
 import Revealer from "../../../components/Revealer"
 import GradientMobile from "../../../three/GradientMobile"
-import ButtonSecond from "../../../components/ButtonSecond"
 
 export default function Home() {
   return <>
