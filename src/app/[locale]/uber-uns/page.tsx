@@ -1,20 +1,18 @@
-// исправить тут дивы в параграфах
-// 'use client'
-
+import { useTranslations } from "next-intl"
 import TextAnimation from "../../../../components/TextAnimation"
 import ButtonSecond from "../../../../components/ButtonSecond"
 import Header from "../../../../components/HeaderSecond"
 import Footer from "../../../../components/Footer"
-import { useTranslations } from "next-intl"
+import Revealer from "../../../../components/Revealer"
 
 
 export default function UberUns() {
-
   const t = useTranslations("aboutUs")
   const btn = useTranslations("buttons")
 
   return (
     <>
+      <Revealer />
       <Header />
       <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
         <div className="grid">
@@ -31,21 +29,27 @@ export default function UberUns() {
             </div>
 
             <div className="border-l p-5">
-              <TextAnimation>
-                <p className="text-gray-500">
+              <p className="text-gray-500">
+                <TextAnimation>
                   <span>
                     {t("about1")}
                   </span>
+                </TextAnimation>
 
-                  <br />
+                <br />
+                <TextAnimation>
                   <span>
                     <br />
                     {t("about2")}
                   </span>
+                </TextAnimation>
+
+                <TextAnimation>
                   <span dangerouslySetInnerHTML={{ __html: t.raw("about3") }}>
                   </span>
-                </p>
-              </TextAnimation>
+                </TextAnimation>
+
+              </p>
             </div>
 
 

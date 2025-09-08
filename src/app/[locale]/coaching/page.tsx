@@ -3,6 +3,7 @@ import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
 import { useTranslations } from "next-intl"
 import Header from "../../../../components/HeaderSecond"
+import Revealer from "../../../../components/Revealer"
 
 export default function CoachingPage() {
   const t = useTranslations("coachingPage")
@@ -10,6 +11,7 @@ export default function CoachingPage() {
 
   return (
     <>
+      <Revealer />
       <Header />
       <div className="">
         <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">

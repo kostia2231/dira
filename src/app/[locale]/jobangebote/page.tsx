@@ -1,5 +1,3 @@
-// 'use client'
-
 import { useTranslations } from "next-intl"
 import ButtonSecond from "../../../../components/ButtonSecond"
 import CardCarousel from "../../../../components/CardCarousel"
@@ -7,6 +5,7 @@ import Footer from "../../../../components/Footer"
 import TextAnimation from "../../../../components/TextAnimation"
 import Header from "../../../../components/HeaderSecond"
 import JustGradient from "../../../../three/JustGradient"
+import Revealer from "../../../../components/Revealer"
 
 export default function Jobangebote() {
   const t = useTranslations("vacancies")
@@ -14,6 +13,7 @@ export default function Jobangebote() {
 
   return (
     <>
+      <Revealer />
       <Header />
       <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
         <div className="p-5 relative w-full">
@@ -24,7 +24,7 @@ export default function Jobangebote() {
             </div>
 
             <div className="text-[rgba(255,250,240,1)] text-[24px] leading-[32px] p-5 pb-0">
-              Wir vermitteln regelmäßig attraktive Stellen <br />in folgenden Bereichen:
+              {t("titel1")}<br />{t("titel2")}
             </div>
 
             <CardCarousel />

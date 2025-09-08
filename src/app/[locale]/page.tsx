@@ -1,12 +1,14 @@
 import Welcome from "../../../components/Welcome"
 import Coaching from "../../../components/Coaching"
 import Unternehmer from "../../../components/Unternehmer"
-import Gradient from "../../../three/Gradient"
+import GradientMain from "../../../three/GradientMain"
 import HeaderSecond from "../../../components/HeaderSecond"
+import Revealer from "../../../components/Revealer"
 
 export default function Home() {
   return <>
-    <Gradient />
+    <Revealer />
+    <GradientMain />
     <section>
       <HeaderSecond />
       <Welcome />

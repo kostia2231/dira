@@ -1,4 +1,3 @@
-// "use client"
 import "../globals.css"
 import HeaderMobile from "../../../components/mobile/HeaderMobile"
 import { Providers } from "../providers"
@@ -27,6 +26,11 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        <title>DIRA</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={`${manrope.variable} antialiased`} id="__next">
         <NextIntlClientProvider>
           <Providers>

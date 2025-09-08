@@ -1,4 +1,5 @@
 'use client'
+
 import { useEffect, useRef } from "react"
 import { vertexShader } from "./shaders/vertex"
 import { fragmentShader } from "./shaders/fragment"

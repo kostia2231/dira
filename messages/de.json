@@ -2,7 +2,7 @@
   "slogan": {
     "first": "zur neuen Anstellung",
     "second": "zur Weiterbildung",
-    "third": "zum passenden Job"
+    "third": "zu neuen Chancen"
   },
   "buttons": {
     "titleBooking": "Jetzt anfragen",
@@ -72,7 +72,7 @@
     "about": "Über Uns",
     "about1": "Stell dir vor, du stehst an einem Bahnsteig. In der Hand: dein Koffer voller Erfahrungen, Fähigkeiten und Hoffnungen. Du wartest auf den Zug in Richtung Zukunft – aber welcher ist der richtige? Und wo fährt er überhaupt hin?",
     "about2": "Genau hier kommen wir ins Spiel.",
-    "about3": "<br />Wir sind <span class=\"important-word\">eine private Arbeitsvermittlungsagentur</span> – mit offenen Ohren, klarem Kompass und jeder Menge Erfahrung. <br /> <br />Seit über 20 Jahren begleiten wir Menschen wie dich auf ihrem Weg in eine neue berufliche Zukunft. Egal, ob du Arbeit suchst, ein Unternehmen führen willst oder bereits einen Job hast, aber Unterstützung brauchst: <span class=\"important-word\">Wir stehen an deiner Seite.</span>",
+    "about3": "<br />Wir sind <span class=\"important-word\">eine private Arbeitsvermittlungsagentur</span> – mit offenen Ohren, klarem Kompass und jeder Menge Erfahrung. <br /> <br /> <span class=\"important-word\"> <br />Seit über 20 Jahren</span> begleiten wir Menschen wie dich auf ihrem Weg in eine neue berufliche Zukunft. Egal, ob du Arbeit suchst, ein Unternehmen führen willst oder bereits einen Job hast, aber Unterstützung brauchst: <span class=\"important-word\">Wir stehen an deiner Seite.</span>",
     "how": "Persönlich. Engagiert. Zielgerichtet.",
     "what": "Was wir für Arbeitssuchende tun",
     "what1": "Ganz einfach: <span class=\"important-word\">Wir machen Chancen sichtbar.</span> <br />Ob du gerade erst in Deutschland angekommen bist oder schon länger suchst – wir holen dich genau dort ab, wo du stehst.<br /><span><br />Gemeinsam entwickeln wir ein klares Profil, das zeigt, was dich ausmacht. Wir helfen dir, Bewerbungen zu schreiben, Vorstellungsgespräche zu meistern und die passende Stelle zu finden. Aber nicht irgendeine – <span class=\"important-word\">eine, die wirklich zu dir passt.</span></span><br /><span> <br />Und weil Wissen Türen öffnet, beraten wir dich auch zu Weiterbildungen und Qualifizierungen. Du willst gründen? Auch gut! Mit unserem <span class=\"important-word\">Existenzgründungscoaching</span> machen wir aus deiner Idee ein tragfähiges Geschäft.</span>",
@@ -119,6 +119,8 @@
     "finalMessage": "<span class=\"important-word\">Wir glauben an dich.</span> Auch dann, wenn du selbst vielleicht gerade zweifelst. Komm vorbei. Lass uns reden. Und gemeinsam den nächsten Schritt machen – raus aus der Warteschleife, rein ins Arbeitsleben."
   },
   "vacancies": {
+    "titel1": "Wir vermitteln regelmäßig attraktive Stellen",
+    "titel2": "in folgenden Bereichen:",
     "title": "Dein Weg zum Job beginnt hier – und wir gehen ihn gemeinsam.",
     "sectionText1": "Du suchst nicht irgendeinen Job, sondern eine Aufgabe mit Perspektive?",
     "sectionText2": "Wir bringen dich mit Arbeitgebern zusammen, die genau dich suchen.",

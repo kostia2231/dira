@@ -4,6 +4,9 @@ import TextAnimation from './TextAnimation'
 import DownArrow from "./icons/ArrowUp"
 import { useEffect, useState } from 'react'
 import { useTranslations } from "next-intl"
+import gsap from "gsap"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function GradientText() {
   const tBtn = useTranslations("buttons")
@@ -33,7 +36,8 @@ export default function GradientText() {
 
         <div className="h-full mb-auto text-[24px] leading-[32px] w-fit bottom-50 z-11 text-[rgba(255,250,240,1)] font-semibold cursor-pointer"
         >
-          <p className="lineunder-light absolute opacity-70 hover:opacity-100 pb-[6px]">
+          <p
+            className="lineunder-light absolute opacity-70 hover:opacity-100 pb-[6px]">
             {tBtn("titleAdvise")}
           </p>
 

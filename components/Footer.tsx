@@ -100,11 +100,12 @@ export default function Footer() {
 
       <div className="grid grid-cols-2 text-[12px] text-[rgba(44,67,102,1)] font-semibold  max-[600px]:text-[10px]">
         <div className="p-5 flex gap-5 max-[600px]:flex-col">
-          <p className="underline-animation cursor-pointer">{t("nav.startpage")}</p>
-          <p className="underline-animation cursor-pointer">{t("nav.about")}</p>
-          <p className="underline-animation cursor-pointer">{t("nav.coaching")}</p>
-          <p className="underline-animation cursor-pointer">{t("nav.forEntrepreneurs")}</p>
-          <p className="underline-animation cursor-pointer">{t("nav.jobOffers")}</p>
+          <a
+            href="https://www.instagram.com/diraarbeitsvermittlung/"
+            className="underline-animation cursor-pointer">Instagram</a>
+          <a
+            href="https://www.facebook.com/dira.arbeitsvermittlungCouchig/"
+            className="underline-animation cursor-pointer">Facebook</a>
         </div>
         <div className="border-l  flex justify-between max-[600px]:flex-col">
           <div className="flex gap-5 max-[600px]:flex-col p-5">
