@@ -14,11 +14,6 @@ export default function Home() {
       <div>
         <GradientMobile />
       </div>
-      <div className="absolute top-[85px] p-2.5 gap-5 text-[rgba(255,250,240,1)] flex flex-col">
-        <div className=" text-[28px] leading-[36px]">Ihr Weg <br />
-          zur neuen Anstellung</div>
-        <div className="font-semibold">Kostenlose Erstberatung</div>
-      </div>
     </div>
     <section>
       <HeaderSecond />

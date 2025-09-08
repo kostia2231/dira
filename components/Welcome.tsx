@@ -12,7 +12,7 @@ export default function Welcome() {
   return (
     <>
       <div className="grid">
-        <div className="border-b p-5 max-[600px]:mt-5">
+        <div className="border-b p-5">
           <TextAnimation>
             <p
               className="text-[75px] leading-[80px] text-[rgba(44,67,102,1)] max-[600px]:text-[28px] max-[600]:leading-[36px]"
