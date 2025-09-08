@@ -20,12 +20,12 @@ export default function JustGradient() {
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10)
     camera.position.z = 1
 
-    const geometry = new THREE.PlaneGeometry(2, 2, 54, 54)
+    const geometry = new THREE.PlaneGeometry(4, 2, 28, 54)
     const material = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 },
         resolution: { value: new THREE.Vector2() },
-        aspect: { value: window.innerWidth / window.innerHeight },
+        aspect: { value: 9 / 16 },
       },
       vertexShader,
       fragmentShader,
@@ -42,7 +42,8 @@ export default function JustGradient() {
 
       renderer.setSize(width, height, false)
       material.uniforms.resolution.value.set(width * dpr, height * dpr)
-      material.uniforms.aspect.value = width / height
+
+      material.uniforms.aspect.value = 9 / 16
     }
 
     updateSize()
@@ -76,7 +77,7 @@ export default function JustGradient() {
   return (
     <canvas
       ref={canvasRef}
-      className="block w-full h-[460px] rounded-[15px]"
+      className="block w-full h-full rounded-[15px]"
     />
   )
 }

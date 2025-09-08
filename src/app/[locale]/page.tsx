@@ -10,8 +10,8 @@ export default function Home() {
   return <>
     <Revealer />
     <GradientMain />
-    <div className="relative pt-[85px] px-2.5 hidden max-[600px]:block">
-      <div>
+    <div className="relative px-2.5 pb-2.5  hidden max-[600px]:block h-screen">
+      <div className="pt-[85px] h-full">
         <GradientMobile />
       </div>
     </div>
