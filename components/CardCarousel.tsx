@@ -55,7 +55,7 @@ export default function CardCarousel() {
           <Card key={j.id}>
             <div className="flex flex-col h-full">
               <div className="flex flex-col">
-                <div className="opacity-70">{j.description}</div>
+                <div className="opacity-50">{j.description}</div>
                 <div className="text-[72px] leading-[80px]">€{j.price}</div>
               </div>
               <div className="grow"></div>

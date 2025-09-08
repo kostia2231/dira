@@ -37,7 +37,7 @@ export default function GradientText() {
         <div className="h-full mb-auto text-[24px] leading-[32px] w-fit bottom-50 z-11 text-[rgba(255,250,240,1)] font-semibold cursor-pointer"
         >
           <p
-            className="lineunder-light absolute opacity-70 hover:opacity-100 pb-[6px]">
+            className="lineunder-light absolute opacity-50 hover:opacity-100 pb-[6px]">
             {tBtn("titleAdvise")}
           </p>
 
@@ -45,11 +45,11 @@ export default function GradientText() {
       </div>
 
       <div
-        className="w-fit absolute bottom-10 z-11 left-10 text-[rgba(255,250,240,1)] font-semibold opacity-70 cursor-default">
-        © 2005
+        className="w-fit absolute bottom-10 z-11 left-10 text-[rgba(255,250,240,1)] font-semibold opacity-50 cursor-default">
+        © D.I.R.A. gegr. 2005
       </div>
       <div
-        className="items-center gap-2.5 flex w-fit absolute bottom-10 z-11 left-1/2 -translate-x-1/2 text-[rgba(255,250,240,1)] font-semibold opacity-70 cursor-pointer hover:opacity-100"
+        className="items-center gap-2.5 flex w-fit absolute bottom-10 z-11 left-1/2 -translate-x-1/2 text-[rgba(255,250,240,1)] font-semibold opacity-50 cursor-pointer hover:opacity-100"
         onClick={() => {
           gsap.to(window, {
             duration: 1,
