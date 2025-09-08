@@ -66,7 +66,7 @@ export default function Gradient() {
   }, [])
 
   return (
-    <div>
+    <div className="max-[600px]:hidden">
       <Header />
       <GradientText />
       <div className="relative p-5 h-screen w-full">

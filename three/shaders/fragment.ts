@@ -17,7 +17,7 @@ export const fragmentShader = `
     vec3 colorRedish = vec3(1.0, 0.3608, 0.3608);
 
     vec3 colorWhite = vec3(1.0, 0.9804, 0.9412);
-    vec3 colorBr = vec3(0.4667, 0.6637, 1.0);
+    vec3 colorBr = vec3(0.4667, 0.6637, 1.1);
     vec3 colorOrange = vec3(0.9843, 0.5216, 0.0);
 
 
