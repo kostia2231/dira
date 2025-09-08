@@ -1,34 +1,32 @@
 'use client'
 
+import { useEffect, useRef } from "react"
 import * as THREE from "three"
 import { vertexShader } from "./shaders/vertex"
 import { fragmentShader } from "./shaders/fragment"
-import { useEffect, useRef } from "react"
-import { ScrollToPlugin } from "gsap/ScrollToPlugin"
-gsap.registerPlugin(ScrollToPlugin)
-import gsap from "gsap"
 import Header from "../components/Header"
 import GradientText from "../components/GradientText"
 
 export default function Gradient() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const requestRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (!canvasRef.current) return
-
     const canvas = canvasRef.current
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true })
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight)
+    renderer.setPixelRatio(window.devicePixelRatio)
 
     const scene = new THREE.Scene()
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10)
     camera.position.z = 1
 
-    const geometry = new THREE.PlaneGeometry(2, 2, 256, 256)
+    const geometry = new THREE.PlaneGeometry(2, 2, 128, 128)
     const material = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 },
+        resolution: { value: new THREE.Vector2(canvas.clientWidth, canvas.clientHeight) },
       },
       vertexShader,
       fragmentShader,
@@ -38,28 +36,34 @@ export default function Gradient() {
     const mesh = new THREE.Mesh(geometry, material)
     scene.add(mesh)
 
+    const updateSize = () => {
+      const width = canvas.clientWidth
+      const height = canvas.clientHeight
+      renderer.setSize(width, height, false)
+      material.uniforms.resolution.value.set(width, height)
+    }
+
+    updateSize()
+
     const start = Date.now()
     const animate = () => {
-      requestAnimationFrame(animate)
       material.uniforms.time.value = (Date.now() - start) * 0.001
       renderer.render(scene, camera)
+      requestRef.current = requestAnimationFrame(animate)
     }
     animate()
 
-    const handleResize = () => {
-      renderer.setSize(canvas.clientWidth, canvas.clientHeight)
-    }
-
-    window.addEventListener("resize", handleResize)
+    const resizeObserver = new ResizeObserver(updateSize)
+    resizeObserver.observe(canvas)
 
     return () => {
+      if (requestRef.current !== null) cancelAnimationFrame(requestRef.current)
       geometry.dispose()
       material.dispose()
       renderer.dispose()
-      window.removeEventListener("resize", handleResize)
+      resizeObserver.disconnect()
     }
   }, [])
-
 
   return (
     <div>

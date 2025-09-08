@@ -4,8 +4,23 @@ import ButtonSecond from "./ButtonSecond"
 import ParallaxImageOne from "./ParallaxImageOne"
 import TextAnimation from "./TextAnimation"
 import { useTranslations } from "next-intl"
+import { useRouter, usePathname } from "next/navigation"
 
 export default function Coaching() {
+  const locales = ["de", "ru", "ua"]
+  const path = usePathname()
+  const parts = path?.split("/") || []
+  const locale = parts[1] && locales.includes(parts[1]) ? parts[1] : undefined
+  const withLocale = (href: string) => (locale ? `/${locale}${href}` : href)
+
+  const router = useRouter()
+  const goToJobs = () => {
+    router.push(withLocale("/jobangebote"))
+  }
+  const goToCoaching = () => {
+    router.push(withLocale("/coaching"))
+  }
+
   const t = useTranslations("coaching")
   const points = t.raw("points")
 
@@ -41,8 +56,8 @@ export default function Coaching() {
               />
             </TextAnimation>
             <div className="flex flex-col gap-5 pr-5">
-              <ButtonSecond btnText={t("buttonMore")} />
-              <ButtonSecond btnText={t("buttonJobs")} />
+              <ButtonSecond btnText={t("buttonMore")} onClick={goToCoaching} />
+              <ButtonSecond btnText={t("buttonJobs")} onClick={goToJobs} />
             </div>
           </div>
         </div>

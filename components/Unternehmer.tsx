@@ -6,6 +6,7 @@ import TextAnimation from "./TextAnimation"
 import PartnersLogo from "./PartnersLogo"
 import Footer from "./Footer"
 import { useTranslations } from "next-intl"
+// import ClientText from "./ClientText"
 
 export default function Unternehmer() {
   const t = useTranslations("unternehmer")
@@ -50,6 +51,7 @@ export default function Unternehmer() {
           </div>
         </div>
       </div>
+      {/*<ClientText />*/}
       <div className="h-fit">
         <PartnersLogo />
       </div>

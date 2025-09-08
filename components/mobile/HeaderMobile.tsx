@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import { AnimatePresence } from "motion/react"
-import Logo from "../icons/LogoDira"
+import Logo from "../icons/LogoDiraDark"
 import NavMobile from "./NavMobile"
 
 export default function HeaderMobile() {
@@ -27,7 +27,7 @@ export default function HeaderMobile() {
   return (
     <>
       <header
-        className="header min-[600px]:hidden p-5 border-b bg-dira-light-opacity backdrop-blur-xl pt-10">
+        className="header min-[600px]:hidden p-5 border-b bg-dira-light-opacity backdrop-blur-xl pt-10 z-999">
         <div className="header-content">
           <div className="logo w-fit">
             <div onClick={handleGoHome}>
