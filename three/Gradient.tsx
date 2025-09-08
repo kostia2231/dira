@@ -1,10 +1,22 @@
 'use client'
 
-import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+import { useEffect, useRef, useState } from "react";
+import { vertexShader } from "./shaders/vertex";
+import { fragmentShader } from "./shaders/fragment";
 import * as THREE from "three";
+import Header from "../components/Header";
+import TextAnimation from "../components/TextAnimation";
+import DownArrow from "../components/icons/ArrowUp"
+// import { useTranslations } from "next-intl";
+gsap.registerPlugin(ScrollToPlugin);
 
 export default function Gradient() {
+  // const tBtn = useTranslations("buttons");
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const slogans = ["zur neuen Anstellung", "zur Weiterbildung", "zum passenden Job"] as const;
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -19,64 +31,12 @@ export default function Gradient() {
     camera.position.z = 1;
 
     const geometry = new THREE.PlaneGeometry(2, 2, 256, 256);
-
     const material = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 },
       },
-      vertexShader: `
-        varying vec2 vUv;
-        varying float vNoise;
-        uniform float time;
-
-        float random(vec2 st) {
-          return fract(sin(dot(st.xy, vec2(12.9898,78.233))) * 43758.5453123);
-        }
-
-        float noise(vec2 st) {
-          vec2 i = floor(st);
-          vec2 f = fract(st);
-
-          float a = random(i);
-          float b = random(i + vec2(1.0, 0.0));
-          float c = random(i + vec2(0.0, 1.0));
-          float d = random(i + vec2(1.0, 1.0));
-
-          vec2 u = f*f*(3.0-2.0*f);
-
-          return mix(a, b, u.x) +
-                 (c - a)* u.y * (1.0 - u.x) +
-                 (d - b) * u.x * u.y;
-        }
-
-        void main() {
-          vUv = uv;
-          float n1 = noise(uv * 2.0 + time * 0.1);
-          float n2 = noise(uv * 4.0 - time * 0.2);
-          float n = n1 * 0.9 + n2 * 1.0;
-
-          vNoise = n;
-
-          vec3 pos = position + vec3(0.0, 0.0, n * 0.2);
-          gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
-        }
-      `,
-
-      fragmentShader: `
-             varying vec2 vUv;
-             varying float vNoise;
-
-             void main() {
-               vec3 colorBlue = vec3(0.36, 0.57, 1.0);
-               // vec3 colorBlue = vec3(0.172, 0.267, 0.4);
-               vec3 colorWhite = vec3(0.980, 0.965, 0.929);
-
-               float t = pow(vNoise, 0.1);
-               vec3 color = mix(colorBlue, colorWhite, t);
-
-               gl_FragColor = vec4(color,1.0);
-             }
-           `,
+      vertexShader,
+      fragmentShader,
       side: THREE.DoubleSide,
     });
 
@@ -94,6 +54,7 @@ export default function Gradient() {
     const handleResize = () => {
       renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     };
+
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -104,7 +65,65 @@ export default function Gradient() {
     };
   }, []);
 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex(prev => (prev + 1) % slogans.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [slogans.length]);
+
   return (
-    <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full -z-10" />
+    <div>
+      <Header />
+
+      <div className="flex flex-col gap-5 absolute h-full w-fit z-11 left-10 text-[rgba(255,250,240,1)] text-[75px] leading-[80px]">
+        <div className="flex flex-col justify-end h-full">
+          <span>
+            Ihr Weg
+          </span>
+          <TextAnimation key={index}>
+            <span>{slogans[index]}</span>
+          </TextAnimation>
+        </div>
+
+        <div className="h-full mb-auto text-[24px] leading-[32px] w-fit bottom-50 z-11 text-[rgba(255,250,240,1)] font-semibold cursor-pointer"
+        >
+          <p className="lineunder-light absolute opacity-70 hover:opacity-100 pb-[6px]">
+            Kostenlose Erstberatung
+          </p>
+
+        </div>
+      </div>
+
+      <div
+        className="w-fit absolute bottom-10 z-11 left-10 text-[rgba(255,250,240,1)] font-semibold opacity-70 cursor-default">
+        © 2005
+      </div>
+      <div
+        className="items-center gap-2.5 flex w-fit absolute bottom-10 z-11 left-1/2 -translate-x-1/2 text-[rgba(255,250,240,1)] font-semibold opacity-70 cursor-pointer hover:opacity-100"
+        onClick={() => {
+          gsap.to(window, {
+            duration: 1,
+            scrollTo: { y: window.innerHeight },
+            ease: "power2.inOut",
+          });
+        }}
+      >
+        <p>
+          Weiter scrollen
+        </p>
+        <div className="rotate-135">
+          <DownArrow />
+        </div>
+      </div>
+      <div className="relative p-5 h-screen w-full">
+        <canvas
+          ref={canvasRef}
+          className="block w-full h-full rounded-[15px]"
+        />
+        {/*<div className="flex w-full absolute top-10 left-10 pointer-events-none z-10"></div>*/}
+      </div>
+    </div>
   );
 }

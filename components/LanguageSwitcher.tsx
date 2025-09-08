@@ -59,14 +59,14 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <ul className="absolute top-full left-0  bg-dira-light border rounded-[2px] z-50 p-5 grid gap-5">
+        <ul className="absolute top-full left-0 bg-dira-light border rounded-[5px] z-50 p-5 grid gap-5">
           {locales
             .filter((locale) => locale !== currentLocale)
             .map((locale) => (
               <li key={locale}>
                 <button
                   onClick={() => switchLanguage(locale)}
-                  className="block w-full text-left underline-animation cursor-pointer"
+                  className="text-[#2C4366] block w-full text-left underline-animation cursor-pointer"
                 >
                   {locale.toUpperCase()}
                 </button>

@@ -3,8 +3,10 @@
 
 import TextAnimation from "../../../../components/TextAnimation"
 import ButtonSecond from "../../../../components/ButtonSecond"
+import Header from "../../../../components/HeaderSecond"
 import Footer from "../../../../components/Footer"
 import { useTranslations } from "next-intl"
+
 
 export default function UberUns() {
 
@@ -13,6 +15,7 @@ export default function UberUns() {
 
   return (
     <>
+      <Header />
       <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
         <div className="grid">
           <div className="border-b p-5">

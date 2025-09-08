@@ -34,7 +34,7 @@ export default function ParallaxImageOne({ imageUrl, speed = -20 }: ParallaxImag
               speed,
             },
           ]}
-          className="w-full h-full will-change-transform rounded-[5px]"
+          className="w-full h-full will-change-transform rounded-[15px]"
         />
       </div>
 

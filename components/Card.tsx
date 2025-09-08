@@ -19,8 +19,8 @@ export default function Card({ children }: CardProps) {
     const X = (e.clientX - rect.left) / w;
     const Y = (e.clientY - rect.top) / h;
 
-    const rX = -(X - 0.5) * 10;
-    const rY = (Y - 0.5) * 10;
+    const rX = -(X - 0.5) * 15;
+    const rY = (Y - 0.5) * 15;
 
     el.style.setProperty("--r-x", `${rX}deg`);
     el.style.setProperty("--r-y", `${rY}deg`);
@@ -40,13 +40,13 @@ export default function Card({ children }: CardProps) {
   return (
     <div
       ref={cardRef}
-      className="card relative w-[380px] h-[467px] max-[600px]:w-[300px]"
+      className="card relative w-[350px] h-[400px] shrink-0"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
       <div className="card__wrapper">
-        <div className="card__3d border">
-          <div className="card__layer1 p-10">{children}</div>
+        <div className="card__3d">
+          <div className="h-full card__layer1 p-10 text-[rgba(255,250,240,1)]">{children}</div>
         </div>
       </div>
     </div>
