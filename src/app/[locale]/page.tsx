@@ -23,13 +23,18 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-0 p-2.5 w-full text-center flex flex-col gap-2.5 text-[rgba(255,250,240,1)] font-semibold">
-          <div className="bg-[rgba(255,250,240,0.2)] rounded-[15px] flex flex-col gap-5 p-2.5 pb-5 brightness-105">
+          <div className="bg-[rgba(255,250,240,0.2)] rounded-b-[15px] flex flex-col gap-5 p-2.5 pb-5 brightness-105">
             {/*<div className="text-left w-full">Willkommen <br /> bei Ihrer Arbeitsvermittlung mit Herz und Verstand!</div>*/}
-            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.6)] brightness-105 flex gap-2.5 justify-between items-center w-full">
+            {/*<div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(255,250,240,0.6)] text-[rgba(44,67,102,1)] brightness-105 flex gap-2.5 justify-between items-center w-full">
               <div className="flex justify-between items-center w-fit">
                 Jetzt Telefonieren
               </div>
               <DownArrow />
+            </div>*/}
+            <div className="text-left">
+              Begleiten wir Menschen auf ihrem Weg in
+              den deutschen Arbeitsmarkt — persönlich,
+              engagiert und mit viel Erfahrung.
             </div>
             <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.6)] brightness-105 flex justify-between items-center w-full">
               <div className="">
@@ -38,7 +43,7 @@ export default function Home() {
               <DownArrow />
             </div>
             <div className="text-center px-2.5 flex items-center justify-center gap-2.5">
-              <div>Weiter lesen</div>
+              <div className="opacity-50">Weiter lesen</div>
             </div>
           </div>
         </div>
