@@ -101,7 +101,7 @@ export default function CardCarousel() {
       </div>
 
       <div className="p-5 px-10 pt-3">
-        <div className="bottom-2.5 w-full h-3 bg-[rgba(255,250,240,0.1)] rounded-full overflow-hidden backdrop-blur-2xl  brightness-1.1">
+        <div className="bottom-2.5 w-full h-3 bg-[rgba(255,250,240,0.3)] rounded-full overflow-hidden backdrop-blur-2xl  brightness-1.1">
           <div
             ref={progressBarRef}
             className="h-3 bg-[rgba(255,250,240,1)]"

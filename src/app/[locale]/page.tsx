@@ -5,6 +5,7 @@ import GradientMain from "../../../three/GradientMain"
 import HeaderSecond from "../../../components/HeaderSecond"
 import Revealer from "../../../components/Revealer"
 import GradientMobile from "../../../three/GradientMobile"
+import DownArrow from "../../../components/icons/ArrowUp"
 
 export default function Home() {
   return <>
@@ -20,13 +21,25 @@ export default function Home() {
             zur neuen Anstellung
           </div>
         </div>
-        {/*<div className="p-2.5 pt-5 opacity-50">KOSTENLOSE ERSTBERATUNG</div>*/}
-        <div className="absolute bottom-0 p-2.5 w-full text-center  text-black flex flex-col gap-2.5">
-          <div className="py-5  bg-white rounded-[15px]">
-            <div className="text-center px-2.5">Termin Buchen</div>
-          </div>
-          <div className="py-5  bg-white rounded-[15px]">
-            <div className="text-center px-2.5">Weiter</div>
+
+        <div className="absolute bottom-0 p-2.5 w-full text-center flex flex-col gap-2.5 text-[rgba(255,250,240,1)] font-semibold">
+          <div className="bg-[rgba(255,250,240,0.2)] rounded-[15px] p-5 flex flex-col gap-5 border">
+            <div className="text-left w-full">Willkommen <br /> bei Ihrer Arbeitsvermittlung <br /> mit Herz und Verstand!</div>
+            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.7)] brightness-105 flex gap-2.5 justify-between items-center w-full">
+              <div className="flex justify-between items-center w-fit">
+                Jetzt Telefonieren
+              </div>
+              <DownArrow />
+            </div>
+            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.7)] brightness-105 flex justify-between items-center w-full">
+              <div className="">
+                Termin Vereinbaren
+              </div>
+              <DownArrow />
+            </div>
+            <div className="text-center px-2.5 flex items-center justify-center gap-2.5">
+              <div>Weiter scrollen</div>
+            </div>
           </div>
         </div>
       </div>
