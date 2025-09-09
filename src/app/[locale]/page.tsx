@@ -23,15 +23,15 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-0 p-2.5 w-full text-center flex flex-col gap-2.5 text-[rgba(255,250,240,1)] font-semibold">
-          <div className="bg-[rgba(255,250,240,0.2)] rounded-[15px] p-5 flex flex-col gap-5 border">
-            <div className="text-left w-full">Willkommen <br /> bei Ihrer Arbeitsvermittlung <br /> mit Herz und Verstand!</div>
-            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.7)] brightness-105 flex gap-2.5 justify-between items-center w-full">
+          <div className="bg-[rgba(255,250,240,0.2)] rounded-[15px] p-5 flex flex-col gap-5  py-2.5 brightness-105">
+            <div className="text-left w-full">Willkommen <br /> bei Ihrer Arbeitsvermittlung mit Herz und Verstand!</div>
+            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.6)] brightness-105 flex gap-2.5 justify-between items-center w-full">
               <div className="flex justify-between items-center w-fit">
                 Jetzt Telefonieren
               </div>
               <DownArrow />
             </div>
-            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.7)] brightness-105 flex justify-between items-center w-full">
+            <div className="text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.6)] brightness-105 flex justify-between items-center w-full">
               <div className="">
                 Termin Vereinbaren
               </div>
