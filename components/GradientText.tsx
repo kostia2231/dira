@@ -46,7 +46,7 @@ export default function GradientText() {
 
       <div
         className="w-fit absolute bottom-10 z-11 left-10 text-[rgba(255,250,240,1)] font-semibold opacity-50 cursor-default">
-        © D.I.R.A. gegr. 2005
+        © 2005
       </div>
       <div
         className="items-center gap-2.5 flex w-fit absolute bottom-10 z-11 left-1/2 -translate-x-1/2 text-[rgba(255,250,240,1)] font-semibold opacity-50 cursor-pointer hover:opacity-100"
