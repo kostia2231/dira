@@ -332,6 +332,10 @@ body {
     inset: 0;
 }
 
+.border-dira {
+    border: 1px solid rgba(255, 250, 240, 0.4);
+}
+
 .card__3d {
     transform: rotateY(var(--r-x, 0deg)) rotateX(var(--r-y, 0deg));
     position: absolute;

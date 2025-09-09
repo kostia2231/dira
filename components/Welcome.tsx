@@ -12,7 +12,7 @@ export default function Welcome() {
   return (
     <>
       <div className="grid">
-        <div className="border-b p-5 pt-2.5">
+        <div className="border-b p-5 pt-2.5 max-[600px]:hidden">
           <TextAnimation>
             <p
               className="text-[75px] leading-[80px] text-[rgba(44,67,102,1)] max-[600px]:text-[28px] max-[600]:leading-[36px]"
@@ -23,11 +23,6 @@ export default function Welcome() {
           <div className="pt-5 min-[600px]:hidden">
             <ButtonSecond btnText={tBtn("titleBooking")} />
           </div>
-        </div>
-
-
-        <div className="min-[600px]:hidden border-b">
-          <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={0} />
         </div>
 
         <div className="grid grid-cols-2 text-2xl max-[600px]:grid-cols-1">
@@ -58,6 +53,10 @@ export default function Welcome() {
               <ButtonSecond btnText={tBtn("titleAdvise")} />
             </div>
           </div>
+        </div>
+
+        <div className="min-[600px]:hidden border-t">
+          <ParallaxImageOne imageUrl="/images/12_sm.webp" speed={0} />
         </div>
       </div >
     </>
