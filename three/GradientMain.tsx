@@ -22,7 +22,7 @@ export default function Gradient() {
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10)
     camera.position.z = 1
 
-    const geometry = new THREE.PlaneGeometry(2, 2, 128, 128)
+    const geometry = new THREE.PlaneGeometry(2, 2, 32, 32)
     const material = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 },
@@ -57,9 +57,12 @@ export default function Gradient() {
     resizeObserver.observe(canvas)
 
     return () => {
-      if (requestRef.current !== null) cancelAnimationFrame(requestRef.current)
-      geometry.dispose()
-      material.dispose()
+      if (requestRef.current !== null) {
+        cancelAnimationFrame(requestRef.current)
+      }
+      scene.remove(mesh)
+      mesh.geometry.dispose()
+        ; (mesh.material as THREE.Material).dispose()
       renderer.dispose()
       resizeObserver.disconnect()
     }

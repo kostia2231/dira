@@ -20,7 +20,7 @@ export default function JustGradient() {
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10)
     camera.position.z = 1
 
-    const geometry = new THREE.PlaneGeometry(2, 2, 128, 128)
+    const geometry = new THREE.PlaneGeometry(2, 2, 32, 32)
     const material = new THREE.ShaderMaterial({
       uniforms: {
         time: { value: 0 },
