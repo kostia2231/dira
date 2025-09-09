@@ -32,7 +32,7 @@ export default function Home() {
               <DownArrow />
             </div>*/}
             <div className="text-left">
-              Willkommen bei Ihrer Arbeitsvermittlung <br /> – persönlich, menschlich, mit Herz und Verstand.
+              Willkommen bei Ihrer Arbeitsvermittlung <br /> – persönlich, menschlich, mit Herz und Verstand. <br /> Sichern Sie sich jetzt einen Termin.
             </div>
             <div className="border-dira text-left px-5 uppercase p-5 rounded-[5px] bg-[rgba(44,67,102,0.5)] brightness-105 flex justify-between items-center w-full">
               <div className="">
