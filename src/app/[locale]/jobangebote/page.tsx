@@ -16,7 +16,7 @@ export default function Jobangebote() {
       <Revealer />
       <Header />
       <section className="text-[rgba(44,67,102,1)] max-[600px]:mt-[73px]">
-        <div className="p-5 relative w-full">
+        <div className="p-5 relative w-full max-[600px]:p-2.5">
           <div className="relative flex flex-col">
 
             <div className="absolute inset-0 -z-10">

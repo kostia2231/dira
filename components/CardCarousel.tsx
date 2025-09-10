@@ -78,7 +78,7 @@ export default function CardCarousel() {
     <div className="grid">
       <div
         ref={carouselRef}
-        className="flex gap-10 overflow-x-auto scrollbar-hide p-10 pb-2.5 cursor-grab"
+        className="flex gap-10 max-[600px]:gap-5 overflow-x-auto scrollbar-hide p-10 pb-2.5 cursor-grab max-[600px]:px-5"
         style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
@@ -91,7 +91,7 @@ export default function CardCarousel() {
             <div className="flex flex-col h-full">
               <div className="flex flex-col">
                 <div className="opacity-50">{j.description}</div>
-                <div className="text-[72px] leading-[80px]">€{j.price}</div>
+                <div className="text-[58px] leading-[66px]">€{j.price}</div>
               </div>
               <div className="grow"></div>
               <div className="text-[24px] leading-[32px] max-[600px]:text-[16px] max-[600px]:leading-[24px] font-semibold">{j.title}</div>
@@ -100,7 +100,7 @@ export default function CardCarousel() {
         ))}
       </div>
 
-      <div className="p-5 px-10 pt-3">
+      <div className="p-5 px-10 pt-3 max-[600px]:px-5">
         <div className="bottom-2.5 w-full h-3 bg-[rgba(255,250,240,0.3)] rounded-full overflow-hidden backdrop-blur-2xl  brightness-1.1">
           <div
             ref={progressBarRef}
