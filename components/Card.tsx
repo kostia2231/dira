@@ -40,7 +40,7 @@ export default function Card({ children }: CardProps) {
   return (
     <div
       ref={cardRef}
-      className="card relative w-[350px] h-[400px] shrink-0"
+      className="card relative w-[350px] h-[400px] shrink-0 max-[600px]:h-[320px] max-[600px]:w-[260px]"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >

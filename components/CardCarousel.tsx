@@ -94,7 +94,7 @@ export default function CardCarousel() {
                 <div className="text-[72px] leading-[80px]">€{j.price}</div>
               </div>
               <div className="grow"></div>
-              <div className="text-[24px] leading-[32px]">{j.title}</div>
+              <div className="text-[24px] leading-[32px] max-[600px]:text-[16px] max-[600px]:leading-[24px] font-semibold">{j.title}</div>
             </div>
           </Card>
         ))}
