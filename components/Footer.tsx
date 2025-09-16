@@ -4,6 +4,8 @@ import ButtonSecond from "./ButtonSecond"
 import TextAnimation from "./TextAnimation"
 import { useTranslations } from "next-intl"
 import { usePathname } from "next/navigation"
+import FacebookIcon from "./icons/Facebook"
+import InstagramIcon from "./icons/Instagram"
 
 export default function Footer() {
   const t = useTranslations("footer")
@@ -101,11 +103,15 @@ export default function Footer() {
       <div className="grid grid-cols-2 text-[12px] text-[rgba(44,67,102,1)] font-semibold  max-[600px]:text-[10px]">
         <div className="p-5 flex gap-5 max-[600px]:flex-col">
           <a
-            href="https://www.instagram.com/diraarbeitsvermittlung/"
-            className="underline-animation cursor-pointer">Instagram</a>
-          <a
             href="https://www.facebook.com/dira.arbeitsvermittlungCouchig/"
-            className="underline-animation cursor-pointer">Facebook</a>
+            className="underline-animation cursor-pointer">
+            <FacebookIcon size={20} />
+          </a>
+          <a
+            href="https://www.instagram.com/diraarbeitsvermittlung/"
+            className="underline-animation cursor-pointer flex">
+            <InstagramIcon size={20} />
+          </a>
         </div>
         <div className="border-l  flex justify-between max-[600px]:flex-col">
           <div className="flex gap-5 max-[600px]:flex-col p-5">

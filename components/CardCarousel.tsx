@@ -2,6 +2,7 @@
 
 import Card from "./Card"
 import { useRef, useState } from "react"
+import { useTranslations } from "next-intl"
 
 export default function CardCarousel() {
   const carouselRef = useRef<HTMLDivElement | null>(null)
@@ -9,16 +10,17 @@ export default function CardCarousel() {
   const [isDragging, setIsDragging] = useState(false)
   const [startX, setStartX] = useState(0)
   const [scrollLeft, setScrollLeft] = useState(0)
+  const t = useTranslations("card")
 
   const jobs = [
-    { id: 1, title: "IT & Webdesign", description: "ab ca. pro Stunde", price: "18" },
-    { id: 2, title: "Büro & Verwaltung", description: "ab ca. pro Stunde", price: "16" },
-    { id: 3, title: "Lohn- und Finanzbuchhaltung", description: "ab ca. pro Stunde", price: "15" },
-    { id: 4, title: "Verkauf & Dienstleistungen", description: "ab ca. pro Stunde", price: "15" },
-    { id: 5, title: "Handwerk & Technik", description: "ab ca. pro Stunde", price: "15" },
-    { id: 6, title: "Lager & Logistik", description: "ab ca. pro Stunde", price: "14" },
-    { id: 7, title: "Pflege & Gesundheit", description: "ab ca. pro Stunde", price: "16" },
-    { id: 8, title: "Gastronomie & Küche", description: "ab ca. pro Stunde", price: "14" },
+    { id: 1, key: "it", price: "18" },
+    { id: 2, key: "office", price: "16" },
+    { id: 3, key: "finance", price: "15" },
+    { id: 4, key: "sales", price: "15" },
+    { id: 5, key: "craft", price: "15" },
+    { id: 6, key: "logistics", price: "14" },
+    { id: 7, key: "health", price: "16" },
+    { id: 8, key: "kitchen", price: "14" },
   ] as const
 
   const sortedJobs = [...jobs].sort((b, a) => parseInt(b.price) - parseInt(a.price))
@@ -90,11 +92,13 @@ export default function CardCarousel() {
           <Card key={j.id}>
             <div className="flex flex-col h-full">
               <div className="flex flex-col">
-                <div className="opacity-50">{j.description}</div>
+                <div className="opacity-50">{t(`jobs.${j.key}.description`)}</div>
                 <div className="text-[58px] leading-[66px]">€{j.price}</div>
               </div>
               <div className="grow"></div>
-              <div className="text-[24px] leading-[32px] max-[600px]:text-[16px] max-[600px]:leading-[24px] font-semibold">{j.title}</div>
+              <div className="text-[24px] leading-[32px] max-[600px]:text-[16px] max-[600px]:leading-[24px] font-semibold">
+                {t(`jobs.${j.key}.title`)}
+              </div>
             </div>
           </Card>
         ))}

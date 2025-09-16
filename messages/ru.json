@@ -1,8 +1,46 @@
 {
+  "card": {
+    "jobs": {
+      "it": {
+        "title": "IT и веб-дизайн",
+        "description": "от/ за час"
+      },
+      "office": {
+        "title": "Офис и администрация",
+        "description": "от/ за час"
+      },
+      "finance": {
+        "title": "Бухгалтерия и финансы",
+        "description": "от/ за час"
+      },
+      "sales": {
+        "title": "Продажи и услуги",
+        "description": "от/ за час"
+      },
+      "craft": {
+        "title": "Ремесло и техника",
+        "description": "от/ за час"
+      },
+      "logistics": {
+        "title": "Склад и логистика",
+        "description": "от/ за час"
+      },
+      "health": {
+        "title": "Уход и здоровье",
+        "description": "от/ за час"
+      },
+      "kitchen": {
+        "title": "Гастрономия и кухня",
+        "description": "от/ за час"
+      }
+    }
+  },
   "slogan": {
     "first": "к любимой работе",
     "second": "к современному образованию",
-    "third": "к новым возможностям"
+    "third": "к новым возможностям",
+    "firstMobile": "Добро пожаловать в Вашу службу занятости!",
+    "secondMobile": "Запишитесь на приём уже сейчас."
   },
   "buttons": {
     "titleBooking": "Записаться",

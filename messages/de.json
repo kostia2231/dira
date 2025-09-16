@@ -1,8 +1,46 @@
 {
+  "card": {
+    "jobs": {
+      "it": {
+        "title": "IT & Webdesign",
+        "description": "ab ca. pro Stunde"
+      },
+      "office": {
+        "title": "Büro & Verwaltung",
+        "description": "ab ca. pro Stunde"
+      },
+      "finance": {
+        "title": "Lohn- und Finanzbuchhaltung",
+        "description": "ab ca. pro Stunde"
+      },
+      "sales": {
+        "title": "Verkauf & Dienstleistungen",
+        "description": "ab ca. pro Stunde"
+      },
+      "craft": {
+        "title": "Handwerk & Technik",
+        "description": "ab ca. pro Stunde"
+      },
+      "logistics": {
+        "title": "Lager & Logistik",
+        "description": "ab ca. pro Stunde"
+      },
+      "health": {
+        "title": "Pflege & Gesundheit",
+        "description": "ab ca. pro Stunde"
+      },
+      "kitchen": {
+        "title": "Gastronomie & Küche",
+        "description": "ab ca. pro Stunde"
+      }
+    }
+  },
   "slogan": {
     "first": "zur neuen Anstellung",
     "second": "zur Weiterbildung",
-    "third": "zu neuen Chancen"
+    "third": "zu neuen Chancen",
+    "firstMobile": "Willkommen bei Ihrer Arbeitsvermittlung!",
+    "secondMobile": "Sichern Sie sich jetzt einen Termin."
   },
   "buttons": {
     "titleBooking": "Jetzt anfragen",
