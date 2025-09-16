@@ -3,35 +3,35 @@
     "jobs": {
       "it": {
         "title": "IT и веб-дизайн",
-        "description": "от/ за час"
+        "description": "от/ в час"
       },
       "office": {
         "title": "Офис и администрация",
-        "description": "от/ за час"
+        "description": "от/ в час"
       },
       "finance": {
-        "title": "Бухгалтерия и финансы",
-        "description": "от/ за час"
+        "title": "Бухгалтерия и обслуживание клиентов",
+        "description": "от/ в час"
       },
       "sales": {
         "title": "Продажи и услуги",
-        "description": "от/ за час"
+        "description": "от/ в час"
       },
       "craft": {
-        "title": "Ремесло и техника",
-        "description": "от/ за час"
+        "title": "Ремесленные и технические работы",
+        "description": "от/ в час"
       },
       "logistics": {
         "title": "Склад и логистика",
-        "description": "от/ за час"
+        "description": "от/ в час"
       },
       "health": {
-        "title": "Уход и здоровье",
-        "description": "от/ за час"
+        "title": "Уход и здравоохранение",
+        "description": "от/ в час"
       },
       "kitchen": {
-        "title": "Гастрономия и кухня",
-        "description": "от/ за час"
+        "title": "Гастрономия и бар",
+        "description": "от/ в час"
       }
     }
   },

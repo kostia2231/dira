@@ -1,7 +1,7 @@
 'use client'
 
 import Card from "./Card"
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import { useTranslations } from "next-intl"
 
 export default function CardCarousel() {
@@ -37,17 +37,18 @@ export default function CardCarousel() {
     progressBar.style.width = `${Math.max(0, Math.min(100, progress))}%`
   }
 
+  const isMobile = typeof window !== "undefined" && /Mobi|Android/i.test(navigator.userAgent)
+
   const onMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!carouselRef.current) return
+    if (isMobile || !carouselRef.current) return
     setIsDragging(true)
     setStartX(e.pageX - carouselRef.current.offsetLeft)
     setScrollLeft(carouselRef.current.scrollLeft)
-
-    document.body.style.userSelect = 'none'
+    document.body.style.userSelect = "none"
   }
 
   const onMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!isDragging || !carouselRef.current) return
+    if (isMobile || !isDragging || !carouselRef.current) return
     e.preventDefault()
 
     const x = e.pageX - carouselRef.current.offsetLeft
@@ -56,35 +57,34 @@ export default function CardCarousel() {
     const newScrollLeft = scrollLeft - walk
 
     el.scrollLeft = newScrollLeft
-
     updateProgressBar(newScrollLeft)
   }
 
-  const onMouseLeave = () => {
+  const onMouseUpOrLeave = () => {
     setIsDragging(false)
-    document.body.style.userSelect = ''
-  }
-
-  const onMouseUp = () => {
-    setIsDragging(false)
-    document.body.style.userSelect = ''
+    document.body.style.userSelect = ""
   }
 
   const handleScroll = () => {
-    if (!isDragging) {
+    if (!carouselRef.current) return
+    requestAnimationFrame(() => {
       updateProgressBar()
-    }
+    })
   }
+
+  useEffect(() => {
+    updateProgressBar()
+  }, [])
 
   return (
     <div className="grid">
       <div
         ref={carouselRef}
         className="flex gap-10 max-[600px]:gap-5 overflow-x-auto scrollbar-hide p-10 pb-2.5 cursor-grab max-[600px]:px-5"
-        style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+        style={{ cursor: isDragging ? "grabbing" : "grab" }}
         onMouseDown={onMouseDown}
-        onMouseLeave={onMouseLeave}
-        onMouseUp={onMouseUp}
+        onMouseLeave={onMouseUpOrLeave}
+        onMouseUp={onMouseUpOrLeave}
         onMouseMove={onMouseMove}
         onScroll={handleScroll}
       >
@@ -93,7 +93,9 @@ export default function CardCarousel() {
             <div className="flex flex-col h-full">
               <div className="flex flex-col">
                 <div className="opacity-50">{t(`jobs.${j.key}.description`)}</div>
-                <div className="text-[58px] leading-[66px]">€{j.price}</div>
+                <div className="max-[600px]:text-[58px] max-[600px]:leading-[66px] text-[75px] leading-[80px]">
+                  €{j.price}
+                </div>
               </div>
               <div className="grow"></div>
               <div className="text-[24px] leading-[32px] max-[600px]:text-[16px] max-[600px]:leading-[24px] font-semibold">
@@ -105,15 +107,14 @@ export default function CardCarousel() {
       </div>
 
       <div className="p-5 px-10 pt-3 max-[600px]:px-5">
-        <div className="bottom-2.5 w-full h-3 bg-[rgba(255,250,240,0.3)] rounded-full overflow-hidden backdrop-blur-2xl  brightness-1.1">
+        <div className="bottom-2.5 w-full h-3 bg-[rgba(255,250,240,0.3)] rounded-full overflow-hidden backdrop-blur-2xl brightness-1.1">
           <div
             ref={progressBarRef}
             className="h-3 bg-[rgba(255,250,240,1)]"
-            style={{ width: '0%' }}
+            style={{ width: "0%" }}
           />
         </div>
       </div>
-
     </div>
   )
 }
