@@ -45,9 +45,9 @@ export default function Header() {
             {t("coaching")}
           </Link>
 
-          <a onClick={onClick} className="cursor-pointer underline-animation-light">
+          <Link href={withLocale("/unternehmer")} className={linkClass("/unternehmer")}>
             {t("business")}
-          </a>
+          </Link>
 
           <Link href={withLocale("/jobangebote")} className={linkClass("/jobangebote")}>
             {t("jobs")}

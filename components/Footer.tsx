@@ -104,12 +104,12 @@ export default function Footer() {
         <div className="p-5 flex gap-5 max-[600px]:flex-col">
           <a
             href="https://www.facebook.com/dira.arbeitsvermittlungCouchig/"
-            className="underline-animation cursor-pointer">
+            className="hover:opacity-50 cursor-pointer">
             <FacebookIcon size={20} />
           </a>
           <a
             href="https://www.instagram.com/diraarbeitsvermittlung/"
-            className="underline-animation cursor-pointer flex">
+            className="hover:opacity-50 cursor-pointer flex">
             <InstagramIcon size={20} />
           </a>
         </div>
